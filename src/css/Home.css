@@ -1,0 +1,32 @@
+#hero {
+    position: relative;
+    object-fit: cover;
+}
+
+#hero img {
+    width: 100%;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid2 figure:nth-of-type(1) {
+    position: relative;
+}
+
+.grid2 figure:nth-of-type(1) figcaption {
+    position: absolute;
+    bottom: 0;
+}
+
+.grid2 figure:nth-of-type(1) > img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.grid2 figure:nth-of-type(1n + 2) {
+    display: flex;
+    grid-column: 2/3;
+}
