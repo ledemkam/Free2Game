@@ -1,0 +1,20 @@
+.searchfield{
+    width: 277px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #375470;
+    margin-left: 78%;
+    color: white;
+    text-align: center;
+}
+
+.logo{
+    margin-bottom: -50px;
+    margin-left: 3%;
+}
+
+.searchicon{
+    position: absolute;
+    right: 33px;
+    top: 28px;
+}

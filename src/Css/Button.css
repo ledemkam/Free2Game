@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+.button{
+  width: 138px;
+  height: 51px;
+  border-radius: 12px;
+  padding: 12px 24px 12px 24px;
+  color: white;
+  background-color: #FF4654;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.938rem;
+  text-transform: uppercase;
+}
+
+
