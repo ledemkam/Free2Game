@@ -1,11 +1,11 @@
 
-import Details from './components/Details'
+import Allgames from './components/Allgames'
 
 function App() {
   return (
 
     <div>
-      <Details />
+      <Allgames />
     </div>
 
   );
