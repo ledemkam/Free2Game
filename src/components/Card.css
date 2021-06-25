@@ -1,0 +1,49 @@
+.card{
+    background-color: #102130;
+    width: 285px;
+    border-radius: 20px;
+}   
+
+.card img{
+    width: 285px;
+    border-radius: 1.5rem;
+}
+
+.card h3{
+    color:#FFFFFF;
+    margin: 5vh 0 3vh;
+}
+
+.card p{
+    color:#AFC7DF;
+    line-height: 1.5rem;
+}
+
+.card .category{
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    display: flex;
+    margin: 2vh 5%;
+    padding: 4vh 5% 4vh 0;
+    justify-content: flex-start;
+}
+
+.card .category span{
+    border: 1px solid #FF4654;
+    border-radius: 15px;
+    padding: 6px 12px;
+    margin-right: 12px
+}
+
+.card .category img{
+    width: 100%;
+    border-radius: 0;
+    display: block;
+}
+
+.card .description{
+    margin: 0 10%;
+    text-align: left;
+}
+
+
