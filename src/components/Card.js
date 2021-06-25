@@ -1,4 +1,4 @@
-import './Card.css'
+import "../Css/Card.css"
 
 const Card = (props) => {
     console.log(props)
