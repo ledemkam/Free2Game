@@ -30,3 +30,8 @@
     display: flex;
     grid-column: 2/3;
 }
+
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
