@@ -1,5 +1,7 @@
+import "../css/Home.css"
 import AddedSection from "./AddedSection";
 import TopPcSection from "./TopPcSection";
+import TopWebSection from "./TopWebSection";
 
 const Home = () => {
     return (
@@ -10,6 +12,7 @@ const Home = () => {
             </section>
             <AddedSection />
             <TopPcSection />
+            <TopWebSection />
         </main>);
 }
 

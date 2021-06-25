@@ -5,14 +5,13 @@ const Card = (props) => {
             <figcaption>
                 <p>{props.title}</p>
                 <p>{props.description}</p>
+                {/* <button>{props.link}Text</button> */}
+                <div>linie</div>
+                <span>{props.platform}</span>
+                <span>{props.genre}</span>
             </figcaption>
-            {/* <button>{props.link}Text</button> */}
-            <div>linie</div>
-            <span>{props.platform}</span>
-            <span>{props.genre}</span>
         </figure>
     );
 }
 
 export default Card;
-

@@ -13,21 +13,7 @@ font-family: 'Titillium Web', sans-serif;
     overflow-x: hidden;
 }
 
-.grid4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-#hero {
-    position: relative;
-    object-fit: cover;
-}
-
-#hero img {
-    width: 100%;
-}
-
-h1 {
+#hero h1 {
     font-family: Oswald;
     font-size: 3rem;
     font-weight: 700;
@@ -36,4 +22,9 @@ h1 {
     position: absolute;
     left: 5vw;
     bottom: 6vh;
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
