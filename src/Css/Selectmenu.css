@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+/* font-family: 'Titillium Web', sans-serif; */
+
+.buttonselect{
+    width: 285px;
+    height: 51px;
+    border-radius: 12px;
+    background-color: #FF4654;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.125rem;
+}
+
+.buttonselect1{
+    width: 285px;
+    height: 51px;
+    border-radius: 12px;
+    background-color: #FF4654;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.125rem;
+}
+
+.buttonselect2{
+    width: 285px;
+    height: 51px;
+    border-radius: 12px;
+    background-color: #FF4654;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.125rem;
+}
+
+.allselect{
+    margin-left: 150px;
+    display: flex;
+}
+
+
+
+.menu {
+    width: 261px;
+    height: 51px;
+    border-radius: 12px;
+    padding:12px, 24px, 12px, 24px;
+    position: absolute;
+}
+
+.menu1 {
+    width: 261px;
+    height: 51px;
+    border-radius: 12px;
+    padding:12px, 24px, 12px, 24px;
+    position: absolute;
+}
+
+.menu2 {
+    width: 261px;
+    height: 51px;
+    border-radius: 12px;
+    padding:12px, 24px, 12px, 24px;
+    position: absolute;
+}
+
+.menu input{
+    margin-left: 6%;
+}
+
+button img{
+    margin-left: 64%;
+}
+
+.menu div{
+    background-color:#375470 ;
+    padding: 4%;
+    border-radius: 12px;
+}
+
+.menu1 div{
+    background-color:#375470 ;
+    padding: 4%;
+    border-radius: 12px;
+}
+
+.menu2 div{
+    background-color:#375470 ;
+    padding: 4%;
+    border-radius: 12px;
+}
+
+.menu:first-of-type{
+    margin-top: 10px;
+}
+
+.menu1:first-of-type{
+    margin-top: 10px;
+}
+
+.menu2:first-of-type{
+    margin-top: 10px;
+}
+
+
+
