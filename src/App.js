@@ -33,6 +33,7 @@ function App() {
         </div>
         <Switch>
           <Route path="/" component={Home} exact />
+          {/* <Route path="Details" component={Details} /> */}
         </Switch>
       </Router>
     </>
