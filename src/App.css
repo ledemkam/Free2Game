@@ -11,6 +11,7 @@ font-family: 'Titillium Web', sans-serif;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    
 }
 
 #hero h1 {
@@ -27,4 +28,8 @@ font-family: 'Titillium Web', sans-serif;
 .grid4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+body {
+    background: #040F14;
 }

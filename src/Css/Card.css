@@ -1,11 +1,11 @@
 .card{
     background-color: #102130;
-    width: 285px;
-    border-radius: 20px;
+    /* width: 285px; */
+    border-radius: 1.5rem;
 }   
 
 .card img{
-    width: 285px;
+    /* width: 285px; */
     border-radius: 1.5rem;
 }
 

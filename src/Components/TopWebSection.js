@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Card from './Card';
+import Cardcopy from './Cardcopy';
 
 class AddedSection extends Component {
     state = {
@@ -20,7 +20,7 @@ class AddedSection extends Component {
         return (
             <section id="topGamesWeb" className="grid4" >
                 {this.state.isLoaded ?
-                    <Card
+                    <Cardcopy
                         image={this.state.data[0].thumbnail}
                         title={this.state.data[0].title}
                         description={this.state.data[0].short_description}
@@ -30,7 +30,7 @@ class AddedSection extends Component {
                     /> : "Loading ..."
                 }
                 {this.state.isLoaded ?
-                    <Card
+                    <Cardcopy
                         image={this.state.data[1].thumbnail}
                         title={this.state.data[1].title}
                         description={this.state.data[1].short_description}
@@ -40,7 +40,7 @@ class AddedSection extends Component {
                     /> : "Loading ..."
                 }
                 {this.state.isLoaded ?
-                    <Card
+                    <Cardcopy
                         image={this.state.data[2].thumbnail}
                         title={this.state.data[2].title}
                         description={this.state.data[2].short_description}
@@ -50,7 +50,7 @@ class AddedSection extends Component {
                     /> : "Loading ..."
                 }
                 {this.state.isLoaded ?
-                    <Card
+                    <Cardcopy
                         image={this.state.data[3].thumbnail}
                         title={this.state.data[3].title}
                         description={this.state.data[3].short_description}
