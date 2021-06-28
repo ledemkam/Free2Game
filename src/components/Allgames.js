@@ -14,7 +14,7 @@ const Allgames = () => {
             <div className="detailimg">
                 <img src="../img/allgames.png" alt="" />
             </div>
-            <h1>all games</h1>
+            <h1 className="allgamestitel">all games</h1>
             <div>
                 <div>
                     <Select />

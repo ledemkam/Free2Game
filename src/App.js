@@ -17,26 +17,27 @@ import Details from './components/Details';
 import Allgames from './components/Allgames';
 
 function App() {
-  const [open, setOpen] = useState(false);
-  const node = useRef();
-  const menuId = 'main-menu';
+  // const [open, setOpen] = useState(false);
+  // const node = useRef();
+  // const menuId = 'main-menu';
 
-  useOnClickOutside(node, () => setOpen(false));
+  // useOnClickOutside(node, () => setOpen(false));
 
   return (
-    <>
-      <Router>
-        {/* <GlobalStyles /> */}
-        <div>
-          <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
-          <Menu open={open} setOpen={setOpen} id={menuId} />
-        </div>
-        <Switch>
-          <Route path="/" component={Home} exact />
-          {/* <Route path="Details" component={Details} /> */}
-        </Switch>
-      </Router>
-    </>
+    // <>
+    //   <Router>
+    //     <GlobalStyles />
+    //     <div>
+    //       <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+    //       <Menu open={open} setOpen={setOpen} id={menuId} />
+    //     </div>
+    //     <Switch>
+    //       <Route path="/" component={Home} exact />
+    //       {/* <Route path="Details" component={Details} /> */}
+    //     </Switch>
+    //   </Router>
+    // </>
+    <Allgames />
   );
 }
 

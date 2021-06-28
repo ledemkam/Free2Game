@@ -55,7 +55,7 @@ class Select extends Component {
                                     <div><input type="checkbox" /><span> MMORPG </span></div> <br />
                                     <div><input type="checkbox" /><span> Shooter</span></div><br />
                                     <div><input type="checkbox" /><span> Strategy </span></div>
-                                    <div><input type="checkbox" /><span> MOBA </span></div>
+                                    <div className="moba"><input type="checkbox" /><span> MOBA </span></div>
                                 </div>
 
                             )
@@ -77,7 +77,7 @@ class Select extends Component {
                                     <div><input type="checkbox" /><span> Relevance </span></div> <br />
                                     <div><input type="checkbox" /><span> Popularity</span></div><br />
                                     <div><input type="checkbox" /><span> Release Date </span></div>
-                                    <div><input type="checkbox" /><span> MOBA </span></div>
+                                    <div className="moba"><input type="checkbox" /><span> MOBA </span></div>
                                 </div>
                             )
                             : (
