@@ -7,3 +7,16 @@ body{
 p{
     font-family: 'Titillium Web', sans-serif;
 }
+
+h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-left: 10%;
+    margin-top: -13%;
+    margin-bottom: 20%;
+}
+
+.apiallgames{
+    margin-top: 10%;
+    margin-left: 10%;
+}
