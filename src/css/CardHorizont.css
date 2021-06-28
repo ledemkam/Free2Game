@@ -29,10 +29,11 @@
 .cardHorizont button{
     margin: 4vh 0;
 }
+
 .cardHorizont .category {
     margin-bottom: 2rem;
-    overflow-x:visible;
 }
+
 .cardHorizont .category span{
     border: 1px solid #FF4654;
     border-radius: 15px;
