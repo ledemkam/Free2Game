@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../Css/Selectmenu.css';
+import '../css/Selectmenu.css';
 
 
 class Select extends Component {

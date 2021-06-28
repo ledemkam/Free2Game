@@ -1,4 +1,4 @@
-import "../Css/Card.css"
+import "../css/Card.css"
 import Button from "./Button";
 
 const Card = (props) => {

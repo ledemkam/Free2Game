@@ -1,7 +1,7 @@
 import Data from '../data/data.json'
 import CardHorizont from './CardHorizont';
-import Card from '../components/Card';
-import CardImage from '../components/CardImage'
+import Card from './Card';
+import CardImage from './CardImage'
 
 const Test = () => {
 
