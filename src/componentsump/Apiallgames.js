@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Card from './Card'
+import Card from '../components/Card'
 
 class ApiAllgames extends Component {
     state = {
