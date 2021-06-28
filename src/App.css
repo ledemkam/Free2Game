@@ -7,24 +7,22 @@ font-family: 'Titillium Web', sans-serif;
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 #hero h1 {
-    font-family: Oswald;
-    font-size: 3rem;
-    font-weight: 700;
-    color: #fff;
-    width: 388px;
-    position: absolute;
-    left: 5vw;
-    bottom: 6vh;
+   font-family: Oswald;
+   font-size: 3rem;
+   font-weight: 700;
+   color: #fff;
+   width: 388px;
+   position: absolute;
+   left: 5vw;
+   bottom: 6vh;
 }
 
 body {
-    background: #040F14;
+   background: #040f14;
 }

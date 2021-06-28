@@ -1,20 +1,28 @@
-.searchfield{
-    width: 277px;
-    height: 40px;
-    border-radius: 12px;
-    background-color: #375470;
-    margin-left: 78%;
-    color: white;
-    text-align: center;
+.searchfield {
+   width: 277px;
+   height: 35px;
+   border-radius: 12px;
+   background-color: #375470;
+   right: 13px;
+   top: 5px;
+   position: absolute;
+   color: white;
+   text-align: center;
 }
 
-.logo{
-    margin-bottom: -50px;
-    margin-left: 3%;
+.header {
+   height: 50px;
+   position: fixed;
+   width: 100%;
+   background: transparent;
+}
+.logo {
+   position: relative;
+   left: 10%;
+   transition: width 0.3s;
 }
 
-.searchicon{
-    position: absolute;
-    right: 33px;
-    top: 28px;
+.searchicon {
+   right: 33px;
+   top: 28px;
 }

@@ -1,6 +1,6 @@
 import Header from './Header';
 //import Button from './Button';
-import '../Css/Allgames.css';
+import '../css/Allgames.css';
 //import React, { Component } from 'react';
 import ApiAllgames from './Apiallgames';
 //import Card from './Card';
