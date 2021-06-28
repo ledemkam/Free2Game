@@ -38,8 +38,6 @@
     margin-top: 5%;
 }
 
-
-
 .menu {
     width: 261px;
     height: 51px;
@@ -98,10 +96,13 @@ button img{
     float: left;
 }
 
-.select2{
-    float: none;
+.select1{
+    float:left;
 }
 
+.select2{
+    float: left;
+}
 
 
 

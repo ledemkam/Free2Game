@@ -5,8 +5,8 @@ import React, { Component } from 'react';
 import ApiAllgames from './Apiallgames'
 // import Card from './Card'
 import Select from './Selectmenu'
-import Select1 from './Selectmenu'
-import Select2 from './Selectmenu'
+import Select1 from './Selectmenu1'
+import Select2 from './Selectmenu2'
 
 
 const Allgames = () => {
