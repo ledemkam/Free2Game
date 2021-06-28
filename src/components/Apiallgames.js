@@ -14,7 +14,7 @@ class ApiAllgames extends Component {
     }
     render() {
         return (
-            <div className="apiallgames">
+            <div className="apiallgames grid4">
                 {this.state.data.map((ele, i) => <Card key={i} data={ele} />)
                 }
             </div>
