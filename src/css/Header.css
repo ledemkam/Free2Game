@@ -10,6 +10,7 @@
    text-align: center;
 }
 
+<<<<<<< HEAD
 .header {
    height: 50px;
    position: fixed;
@@ -20,6 +21,11 @@
    position: relative;
    left: 10%;
    transition: width 0.3s;
+=======
+.logo{
+    margin-bottom: -44px;
+    margin-left: 3%;   
+>>>>>>> 80a73f022c4d29b98a85d833d8a8fc42bf0737aa
 }
 
 .searchicon {

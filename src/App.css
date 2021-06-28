@@ -7,9 +7,15 @@ font-family: 'Titillium Web', sans-serif;
 */
 
 * {
+<<<<<<< HEAD
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+=======
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+>>>>>>> 80a73f022c4d29b98a85d833d8a8fc42bf0737aa
 }
 
 #hero h1 {
@@ -24,5 +30,43 @@ font-family: 'Titillium Web', sans-serif;
 }
 
 body {
+<<<<<<< HEAD
    background: #040f14;
 }
+=======
+    background: #040F14;
+}
+
+.grid4,
+.grid2 {
+    display: grid;
+    gap: 20px;
+}
+
+.grid4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid2 figure:nth-of-type(1) {
+    position: relative;
+}
+
+.grid2 figure:nth-of-type(1) figcaption {
+    position: absolute;
+    bottom: 0;
+}
+
+.grid2 figure:nth-of-type(1) > img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.grid2 figure:nth-of-type(1n + 2) {
+    display: flex;
+    grid-column: 2/3;
+}
+>>>>>>> 80a73f022c4d29b98a85d833d8a8fc42bf0737aa

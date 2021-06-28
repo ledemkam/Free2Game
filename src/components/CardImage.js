@@ -6,19 +6,18 @@ const CardHorizont = (props) => {
 
     return (
         <figure className="cardImage">
-            <div
-                style={{
-                    backgroundImage: `url(${props.data.thumbnail})`,
-                    width: "25%",
-                    height: "70vh",
-                    borderRadius: "1.5rem",
-                    backgroundSize: 'cover'
-                }}
+            <div className="ImageBig" style={{
+                backgroundImage: `url(${props.data.thumbnail})`,
+                width: "35%",
+                height: "70vh",
+                borderRadius: "1.5rem",
+                backgroundSize: 'cover'
+            }}
             >
                 <div className="number">
                     <span>{props.data.id}</span>
                 </div>
-                <div>
+                <div className="descriptionImage">
                     <section className="description">
                         <h1>{props.data.title}</h1>
                         <Button name="read more" />
