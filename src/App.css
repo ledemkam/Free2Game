@@ -10,8 +10,6 @@ font-family: 'Titillium Web', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
-    
 }
 
 #hero h1 {
@@ -27,4 +25,37 @@ font-family: 'Titillium Web', sans-serif;
 
 body {
     background: #040F14;
+}
+
+.grid4,
+.grid2 {
+    display: grid;
+    gap: 20px;
+}
+
+.grid4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid2 figure:nth-of-type(1) {
+    position: relative;
+}
+
+.grid2 figure:nth-of-type(1) figcaption {
+    position: absolute;
+    bottom: 0;
+}
+
+.grid2 figure:nth-of-type(1) > img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.grid2 figure:nth-of-type(1n + 2) {
+    display: flex;
+    grid-column: 2/3;
 }

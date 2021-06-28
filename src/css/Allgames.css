@@ -8,15 +8,16 @@ p{
     font-family: 'Titillium Web', sans-serif;
 }
 
-h1{
+.allgamestitel{
     text-transform: uppercase;
     font-size: 3rem;
     margin-left: 10%;
-    margin-top: -13%;
+    margin-top: -14%;
     margin-bottom: 20%;
+    position: absolute;
 }
 
 .apiallgames{
-    margin-top: 10%;
-    margin-left: 10%;
+    margin-top: 5%;
+    float: left;
 }

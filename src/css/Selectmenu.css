@@ -35,7 +35,7 @@
 
 .allselect{
     margin-left: 150px;
-    display: flex;
+    margin-top: 5%;
 }
 
 
@@ -44,7 +44,6 @@
     width: 261px;
     height: 51px;
     border-radius: 12px;
-    padding:12px, 24px, 12px, 24px;
     position: absolute;
 }
 
@@ -52,7 +51,6 @@
     width: 261px;
     height: 51px;
     border-radius: 12px;
-    padding:12px, 24px, 12px, 24px;
     position: absolute;
 }
 
@@ -60,7 +58,6 @@
     width: 261px;
     height: 51px;
     border-radius: 12px;
-    padding:12px, 24px, 12px, 24px;
     position: absolute;
 }
 
@@ -76,31 +73,35 @@ button img{
     background-color:#375470 ;
     padding: 4%;
     border-radius: 12px;
+    margin-bottom: -15px;
 }
 
 .menu1 div{
     background-color:#375470 ;
     padding: 4%;
     border-radius: 12px;
+    margin-bottom: -15px;
 }
 
 .menu2 div{
     background-color:#375470 ;
     padding: 4%;
     border-radius: 12px;
+    margin-bottom: -15px;
 }
 
-.menu:first-of-type{
-    margin-top: 10px;
+.moba{
+    margin-top: 24px;
 }
 
-.menu1:first-of-type{
-    margin-top: 10px;
+.select{
+    float: left;
 }
 
-.menu2:first-of-type{
-    margin-top: 10px;
+.select2{
+    float: none;
 }
+
 
 
 
