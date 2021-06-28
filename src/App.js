@@ -8,25 +8,26 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Header from './components/Header';
-//import Details from './components/Details';
-//import Allgames from './components/Allgames';
+import Details from './components/Details';
+import Allgames from './components/Allgames';
 
 function App() {
   // const menuId = 'main-menu';
 
   return (
-    <>
-      <Router>
-        {/* <GlobalStyles /> */}
-        <div>
-          <Header />
-          <Navbar />
-        </div>
-        <Switch>
-          <Route path="/" component={Home} exact />
-        </Switch>
-      </Router>
-    </>
+    // <>
+    //   <Router>
+    //     {/* <GlobalStyles /> */}
+    //     <div>
+    //       <Header />
+    //       <Navbar />
+    //     </div>
+    //     <Switch>
+    //       <Route path="/" component={Home} exact />
+    //     </Switch>
+    //   </Router>
+    // </>
+    <Details />
   );
 }
 

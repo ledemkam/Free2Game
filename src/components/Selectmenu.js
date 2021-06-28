@@ -13,13 +13,12 @@ class Select extends Component {
         this.showMenu = this.showMenu.bind(this);
     }
 
-    showMenu(event) {
-        event.preventDefault();
-
+    showMenu() {
         this.setState({
             showMenu: true,
         });
     }
+
 
     render() {
         return (
