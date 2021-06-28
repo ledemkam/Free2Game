@@ -3,7 +3,7 @@
    height: 35px;
    border-radius: 12px;
    background-color: #375470;
-   right: 13px;
+   right: 53px;
    top: 5px;
    position: absolute;
    color: white;
@@ -20,13 +20,20 @@
    position: relative;
    left: 10%;
    transition: width 0.3s;
-}
-.logo{
     margin-bottom: -44px;
     margin-left: 3%;   
 }
 
-.searchicon {
-   right: 33px;
-   top: 28px;
+.searchicon{
+   position: absolute;
+   right: 6%;
+   top: 15%;
 }
+
+.logo{
+   margin-left: 5%;
+}
+
+
+
+

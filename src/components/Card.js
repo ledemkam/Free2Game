@@ -8,7 +8,7 @@ const Card = (props) => {
         <figure className="card">
             <section>
                 <img src={props.data.thumbnail} alt="" />
-                {/* <p>{props.data.short_description}</p> */}
+                <p>{props.data.short_description}</p>
                 <Button name="read more" />
             </section>
             <div className="category">
