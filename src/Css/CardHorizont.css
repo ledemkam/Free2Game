@@ -1,0 +1,48 @@
+
+.cardHorizont{
+    display: flex;
+    border-radius: 1.5rem;
+    background-color: #102130;
+    width: 50%;
+    }
+
+.number {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background: #102130;
+    border: 2px solid #FF4654;
+    height: 3.88rem;
+    width: 3.88rem;
+    margin: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardHorizont div:nth-of-type(2){
+    margin-left: 2.25rem;
+    color: #FFFFFF;
+}
+
+.cardHorizont button{
+    margin: 4vh 0;
+}
+.cardHorizont .category {
+    margin-bottom: 2rem;
+    overflow-x:visible;
+}
+.cardHorizont .category span{
+    border: 1px solid #FF4654;
+    border-radius: 15px;
+    padding: 6px 12px;
+    margin-right: 12px;
+}
+
+.cardHorizont h3 {
+    margin-top: 3rem;
+    font-family: Oswald;
+}
+
+

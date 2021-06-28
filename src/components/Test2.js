@@ -1,11 +1,13 @@
 import Data from '../data/data.json'
-import Card from './Card';
+import CardHorizont from './CardHorizont';
+import Card from '../components/Card';
+import CardImage from '../components/CardImage'
 
 const Test = () => {
 
     return (
         <div>
-            {Data.map((elem, i) => <Card
+            {Data.map((elem, i) => <CardImage
                 data={elem}
                 key={i} />
             )
