@@ -1,6 +1,32 @@
 
-.cardImage div:nth-of-type(1) {
+
+.cardImage .ImageBig {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+
+.cardImage .category span{
+    border: 1px solid #FF4654;
+    border-radius: 15px;
+    padding: 6px 12px;
+    margin-right: 12px;
+}
+
+.cardImage button{
+    margin: 4vh 0;
+}
+
+.cardImage .category {
+    margin-bottom: 2rem;
+    overflow-x:visible;
+}
+.descriptionImage{
+    margin: 0 10%;
+    text-align: left;
+}
+
+.descriptionImage h1{
+    margin: 0;
 }
