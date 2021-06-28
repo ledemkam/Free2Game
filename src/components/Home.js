@@ -3,6 +3,7 @@ import AddedSection from "./AddedSection";
 import TopPcSection from "./TopPcSection";
 import TopWebSection from "./TopWebSection";
 
+
 const Home = () => {
     return (
         <main>
@@ -13,7 +14,8 @@ const Home = () => {
             <AddedSection />
             <TopPcSection />
             <TopWebSection />
-        </main>);
+        </main>
+    );
 }
 
 export default Home;

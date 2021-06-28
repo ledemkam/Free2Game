@@ -23,6 +23,9 @@ const Menu = ({ open }) => {
                <li>
                   <Link to="/Apiallgames">Allgames</Link>
                </li>
+               <li>
+                  <Link to="/AddedPage">Allgames</Link>
+               </li>
             </ul>
          </nav>
       </StyledMenu>

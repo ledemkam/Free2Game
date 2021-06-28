@@ -1,9 +1,7 @@
-
 .cardHorizont{
     display: flex;
     border-radius: 1.5rem;
     background-color: #102130;
-    width: 50%;
     }
 
 .number {
@@ -44,5 +42,3 @@
     margin-top: 3rem;
     font-family: Oswald;
 }
-
-
