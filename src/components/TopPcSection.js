@@ -21,7 +21,7 @@ class TopPcSection extends Component {
         return (
             <section id="topGamesPC" className="grid2">
                 {this.state.isLoaded ?
-                    this.state.data.slice(0).map((ele, i) => <CardImage key={i} data={ele} />)
+                    this.state.data.slice(0, 1).map((ele, i) => <CardImage key={i} data={ele} />)
                     : "Loading ..."
                 }
                 {this.state.isLoaded ?
