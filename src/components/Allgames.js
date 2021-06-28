@@ -5,6 +5,8 @@ import React, { Component } from 'react';
 import ApiAllgames from './Apiallgames'
 // import Card from './Card'
 import Select from './Selectmenu'
+import Select1 from './Selectmenu'
+import Select2 from './Selectmenu'
 
 
 const Allgames = () => {
@@ -17,7 +19,7 @@ const Allgames = () => {
             <h1 className="allgamestitel">all games</h1>
             <div>
                 <div>
-                    <Select />
+                    <Select /> <Select1 /><Select2 />
                 </div>
                 <ApiAllgames />
             </div>

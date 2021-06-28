@@ -5,6 +5,7 @@ import { Burger, Menu } from './components';
 import Home from './components/Home';
 import "./App.css"
 import Test2 from './components/Test2'
+import Allgames from './components/Allgames'
 
 import {
   BrowserRouter as Router,
@@ -24,20 +25,21 @@ function App() {
   // useOnClickOutside(node, () => setOpen(false));
 
   return (
-    <>
-      <Router>
-        {/* <GlobalStyles /> */}
-        <div>
-          <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
-          <Menu open={open} setOpen={setOpen} id={menuId} />
-        </div>
-        <Switch>
-          <Route path="/" component={Home} exact />
-          {/* <Route path="/Apiallgames" component={Apiallgames} exact /> */}
-          {/* <Route path="Details" component={Details} /> */}
-        </Switch>
-      </Router>
-    </>
+    // <>
+    //   <Router>
+    //     {/* <GlobalStyles /> */}
+    //     <div>
+    //       <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+    //       <Menu open={open} setOpen={setOpen} id={menuId} />
+    //     </div>
+    //     <Switch>
+    //       <Route path="/" component={Home} exact />
+    //       {/* <Route path="/Apiallgames" component={Apiallgames} exact /> */}
+    //       {/* <Route path="Details" component={Details} /> */}
+    //     </Switch>
+    //   </Router>
+    // </>
+    <Allgames />
   );
 }
 

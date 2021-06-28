@@ -35,7 +35,7 @@
 
 .allselect{
     margin-left: 150px;
-    display: flex;
+    margin-top: 5%;
 }
 
 
@@ -94,6 +94,13 @@ button img{
     margin-top: 24px;
 }
 
+.select{
+    float: left;
+}
+
+.select2{
+    float: none;
+}
 
 
 
