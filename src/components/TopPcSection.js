@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import CardHorizont from './CardHorizont';
 import CardImage from './CardImage';
+import Button from './Button';
+
+import {
+    Link
+} from "react-router-dom";
 
 class TopPcSection extends Component {
     state = {
@@ -20,6 +25,7 @@ class TopPcSection extends Component {
     render() {
         return (
             <section id="topGamesPC" className="grid2">
+                <h2 style={{ color: "white" }}>Top 4 Games for PC in June 2021</h2>
                 {this.state.isLoaded ?
                     this.state.data.slice(0, 1).map((ele, i) => <CardImage key={i} data={ele} />)
                     : "Loading ..."
@@ -28,6 +34,7 @@ class TopPcSection extends Component {
                     this.state.data.slice(1, 4).map((ele, i) => <CardHorizont key={i} data={ele} />)
                     : "Loading ..."
                 }
+                <Link to="/Allgames"><Button name="Show more" /></Link>
             </section>
         );
     }

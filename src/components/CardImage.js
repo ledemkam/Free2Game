@@ -8,10 +8,10 @@ const CardHorizont = (props) => {
         <figure className="cardImage">
             <div className="ImageBig" style={{
                 backgroundImage: `url(${props.data.thumbnail})`,
-                width: "35%",
-                height: "70vh",
+                height: "100%",
                 borderRadius: "1.5rem",
-                backgroundSize: 'cover'
+                backgroundSize: 'cover',
+                backgroundPositon: "center"
             }}
             >
                 <div className="number">

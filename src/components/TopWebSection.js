@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import Card from './Card';
+import Button from './Button';
+
+import {
+    Link
+} from "react-router-dom";
 
 class AddedSection extends Component {
     state = {
@@ -19,10 +24,12 @@ class AddedSection extends Component {
     render() {
         return (
             <section id="topGamesWeb" className="grid4" >
+                <h2 style={{ color: "white" }}>Top 4 Games for Browser in June 2021</h2>
                 {this.state.isLoaded ?
                     this.state.data.slice(0, 4).map((ele, i) => <Card key={i} data={ele} />)
                     : "Loading ..."
                 }
+                <Link to="/Allgames"><Button name="Show more" /></Link>
             </section>
         );
     }

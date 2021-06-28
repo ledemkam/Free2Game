@@ -1,9 +1,7 @@
-
 .cardHorizont{
     display: flex;
     border-radius: 1.5rem;
     background-color: #102130;
-    width: 50%;
     }
 
 .number {
@@ -29,10 +27,11 @@
 .cardHorizont button{
     margin: 4vh 0;
 }
+
 .cardHorizont .category {
     margin-bottom: 2rem;
-    overflow-x:visible;
 }
+
 .cardHorizont .category span{
     border: 1px solid #FF4654;
     border-radius: 15px;
@@ -44,5 +43,3 @@
     margin-top: 3rem;
     font-family: Oswald;
 }
-
-
