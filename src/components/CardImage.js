@@ -1,4 +1,4 @@
-import "../Css/CardImage.css"
+import "../css/CardImage.css"
 import Button from "./Button";
 
 const CardHorizont = (props) => {
