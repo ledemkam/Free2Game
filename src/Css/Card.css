@@ -1,29 +1,33 @@
 .card{
     background-color: #102130;
-    /* width: 285px; */
+    width: 285px;
     border-radius: 1.5rem;
 }   
 
 .card img{
-    /* width: 285px; */
     border-radius: 1.5rem;
 }
 
 .card h3{
+    font-family: Oswald;
+    font-weight: bold;
     color:#FFFFFF;
-    margin: 5vh 0 3vh;
+    margin: 4.5vh 0 0;
 }
 
 .card p{
+    font-family: Titillium Web;
+    font-size: 1rem;
     color:#AFC7DF;
     line-height: 1.5rem;
+    margin-top: 3vh;
 }
 
 .card .category{
     border-top: 2px solid rgba(255, 255, 255, 0.2);
     color: #FFFFFF;
     display: flex;
-    margin: 2vh 5%;
+    margin: 0 5%;
     padding: 4vh 5% 4vh 0;
     justify-content: flex-start;
 }
@@ -46,7 +50,6 @@
     text-align: left;
 }
 
-#topGamesPC p,
-#topGamesWeb p {
-    display: none;
+.card button{
+    margin: 4vh 0;
 }
