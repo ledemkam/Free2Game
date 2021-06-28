@@ -11,15 +11,12 @@ const Ul = styled.ul`
    justify-content: center;
    align-content: center;
    li {
-      padding: 25px 60px;
+      padding: 25px 10px;
       color: #fff;
-      width: 180px;
+      width: 200px;
       height: 15px;
    }
-   li:hover {
-      background-color: #d00000;
-      border-radius: 10%;
-   }
+
    border-right: 2px solid #ffffff;
    font-size: 20px;
    background-color: #0d2538;

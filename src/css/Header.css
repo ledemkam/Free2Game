@@ -1,10 +1,10 @@
 .searchfield {
    width: 277px;
-   height: 35px;
+   height: 40px;
    border-radius: 12px;
    background-color: #375470;
-   right: 53px;
-   top: 5px;
+   right: 13px;
+   top: 1, 17%;
    position: absolute;
    color: white;
    text-align: center;
@@ -17,23 +17,14 @@
    background: transparent;
 }
 .logo {
-   position: relative;
-   left: 10%;
-   transition: width 0.3s;
-    margin-bottom: -44px;
-    margin-left: 3%;   
-}
-
-.searchicon{
    position: absolute;
-   right: 6%;
-   top: 15%;
+   left: 4%;
+   transition: width 0.3s;
+   top: 1, 17%;
 }
 
-.logo{
-   margin-left: 5%;
+.searchicon {
+   position: absolute;
+   right: 43px;
+   top: 8px;
 }
-
-
-
-
