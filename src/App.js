@@ -1,41 +1,32 @@
+//import { GlobalStyles } from './global';
+
+import Navbar from './components/Nav/Navbar';
 import Home from './components/Home';
-import "./App.css"
-import Test2 from './components/Test2'
-import Allgames from './components/Allgames'
+import './App.css';
+//import Test2 from './components/Test2';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Header from './components/Header'
-import Details from './components/Details'
-import Apiallgames from './components/Apiallgames'
+import Header from './components/Header';
+//import Details from './components/Details';
+//import Allgames from './components/Allgames';
 
 function App() {
-  // const [open, setOpen] = useState(false);
-  // const node = useRef();
   // const menuId = 'main-menu';
 
-  // useOnClickOutside(node, () => setOpen(false));
-
   return (
-    // <>
-    //   <Router>
-    //     {/* <GlobalStyles /> */}
-    //     <div>
-    //       <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
-    //       <Menu open={open} setOpen={setOpen} id={menuId} />
-    //     </div>
-    //     <Switch>
-    //       <Route path="/" component={Home} exact />
-    //       {/* <Route path="/Apiallgames" component={Apiallgames} exact /> */}
-    //       {/* <Route path="Details" component={Details} /> */}
-    //     </Switch>
-    //   </Router>
-    // </>
-    <Allgames />
+    <>
+      <Router>
+        {/* <GlobalStyles /> */}
+        <div>
+          <Header />
+          <Navbar />
+        </div>
+        <Switch>
+          <Route path="/" component={Home} exact />
+        </Switch>
+      </Router>
+    </>
   );
 }
 
