@@ -1,28 +1,27 @@
-import Header from './Header'
-import Button from './Button'
+import Header from './Header';
+import Button from './Button';
 import '../Css/Allgames.css';
 import React, { Component } from 'react';
-import ApiAllgames from './Apiallgames';
-import Card from './Card'
-import Select from './Selectmenu'
-
+import ApiAllgames from '../Components/Apiallgames';
+import Card from './Card';
+import Select from './Selectmenu';
 
 const Allgames = () => {
-    return (
-        <div className="detailsgame">
-            <Header />
-            <div className="detailimg">
-                <img src="../img/allgames.png" alt="" />
-            </div>
-            <h1>all games</h1>
+   return (
+      <div className="detailsgame">
+         <Header />
+         <div className="detailimg">
+            <img src="../img/allgames.png" alt="" />
+         </div>
+         <h1>all games</h1>
+         <div>
             <div>
-                <div>
-                    <Select />
-                </div>
-                <ApiAllgames />
+               <Select />
             </div>
-        </div>
-    );
-}
+            <ApiAllgames />
+         </div>
+      </div>
+   );
+};
 
 export default Allgames;
