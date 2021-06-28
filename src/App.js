@@ -13,8 +13,8 @@ import {
 } from "react-router-dom";
 
 import Header from './components/Header'
-import Details from './components/Details';
-import Allgames from './components/Allgames';
+import Details from './components/Details'
+import Apiallgames from './components/Apiallgames'
 
 function App() {
   // const [open, setOpen] = useState(false);
@@ -24,20 +24,20 @@ function App() {
   // useOnClickOutside(node, () => setOpen(false));
 
   return (
-    // <>
-    //   <Router>
-    //     <GlobalStyles />
-    //     <div>
-    //       <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
-    //       <Menu open={open} setOpen={setOpen} id={menuId} />
-    //     </div>
-    //     <Switch>
-    //       <Route path="/" component={Home} exact />
-    //       {/* <Route path="Details" component={Details} /> */}
-    //     </Switch>
-    //   </Router>
-    // </>
-    <Allgames />
+    <>
+      <Router>
+        {/* <GlobalStyles /> */}
+        <div>
+          <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+          <Menu open={open} setOpen={setOpen} id={menuId} />
+        </div>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          {/* <Route path="/Apiallgames" component={Apiallgames} exact /> */}
+          {/* <Route path="Details" component={Details} /> */}
+        </Switch>
+      </Router>
+    </>
   );
 }
 
