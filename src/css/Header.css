@@ -1,16 +1,15 @@
 .searchfield {
    width: 277px;
-   height: 35px;
+   height: 40px;
    border-radius: 12px;
    background-color: #375470;
    right: 13px;
-   top: 5px;
+   top: 1, 17%;
    position: absolute;
    color: white;
    text-align: center;
 }
 
-<<<<<<< HEAD
 .header {
    height: 50px;
    position: fixed;
@@ -18,17 +17,14 @@
    background: transparent;
 }
 .logo {
-   position: relative;
-   left: 10%;
+   position: absolute;
+   left: 4%;
    transition: width 0.3s;
-=======
-.logo{
-    margin-bottom: -44px;
-    margin-left: 3%;   
->>>>>>> 80a73f022c4d29b98a85d833d8a8fc42bf0737aa
+   top: 1, 17%;
 }
 
 .searchicon {
-   right: 33px;
-   top: 28px;
+   position: absolute;
+   right: 43px;
+   top: 8px;
 }

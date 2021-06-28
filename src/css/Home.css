@@ -1,9 +1,17 @@
 #hero {
-    position: relative;
-    object-fit: cover;
+   position: relative;
+   object-fit: cover;
 }
-
 #hero img {
-    width: 100%;
+   width: 100%;
 }
-
+#hero h1 {
+   font-family: Oswald;
+   font-size: 3rem;
+   font-weight: 700;
+   color: #fff;
+   width: 388px;
+   position: absolute;
+   left: 5vw;
+   bottom: 6vh;
+}
