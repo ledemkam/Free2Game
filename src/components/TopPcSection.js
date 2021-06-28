@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Cardcopy from './Cardcopy';
+import CardHorizont from './CardHorizont';
 
 class TopPcSection extends Component {
     state = {
@@ -20,40 +20,8 @@ class TopPcSection extends Component {
         return (
             <section id="topGamesPC" className="grid2">
                 {this.state.isLoaded ?
-                    <Cardcopy
-                        image={this.state.data[0].thumbnail}
-                        title={this.state.data[0].title}
-                        // link={ }
-                        platform={this.state.data[0].platform}
-                        genre={this.state.data[0].genre}
-                    /> : "Loading ..."
-                }
-                {this.state.isLoaded ?
-                    <Cardcopy
-                        image={this.state.data[1].thumbnail}
-                        title={this.state.data[1].title}
-                        // link={ }
-                        platform={this.state.data[1].platform}
-                        genre={this.state.data[1].genre}
-                    /> : "Loading ..."
-                }
-                {this.state.isLoaded ?
-                    <Cardcopy
-                        image={this.state.data[2].thumbnail}
-                        title={this.state.data[2].title}
-                        // link={ }
-                        platform={this.state.data[2].platform}
-                        genre={this.state.data[2].genre}
-                    /> : "Loading ..."
-                }
-                {this.state.isLoaded ?
-                    <Cardcopy
-                        image={this.state.data[3].thumbnail}
-                        title={this.state.data[3].title}
-                        // link={ }
-                        platform={this.state.data[3].platform}
-                        genre={this.state.data[3].genre}
-                    /> : "Loading ..."
+                    this.state.data.slice(0, 4).map((ele, i) => <CardHorizont key={i} data={ele} />)
+                    : "Loading ..."
                 }
             </section>
         );

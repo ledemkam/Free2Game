@@ -6,9 +6,8 @@ const Card = (props) => {
 
     return (
         <figure className="card">
-            <img src={props.data.thumbnail} alt="" />
-            <section className="description">
-                <h3>{props.data.title}</h3>
+            <section>
+                <img src={props.data.thumbnail} alt="" />
                 {/* <p>{props.data.short_description}</p> */}
                 <Button name="read more" />
             </section>

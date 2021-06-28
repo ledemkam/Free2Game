@@ -25,11 +25,6 @@ font-family: 'Titillium Web', sans-serif;
     bottom: 6vh;
 }
 
-.grid4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
 body {
     background: #040F14;
 }
