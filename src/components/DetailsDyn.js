@@ -17,7 +17,7 @@ class DetailsDyn extends Component {
             .then(response => response.json())
             .then(json => {
                 this.setState({ data: json, isLoaded: true })
-                console.log(this.state.data.screenshots[0].image)
+                console.log(this.state.data)
             })
     }
     render() {
