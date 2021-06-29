@@ -1,3 +1,13 @@
+nav {
+    height: 100vh;
+    position: fixed;
+    border-right: 2px solid #ffffff;
+    background: #040f14;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
 .burgerMenu {
     display: flex;
     flex-flow: column nowrap;
@@ -15,15 +25,6 @@
     height: 0.25rem;
     background-color: white;
     border-radius: 10px;
-}
-
-nav {
-    height: 100vh;
-    position: fixed;
-    border-right: 2px solid #ffffff;
-    background: #040f14;
-    display: flex;
-    flex-direction: column;
 }
 
 nav svg {
