@@ -3,11 +3,12 @@
    height: 40px;
    border-radius: 12px;
    background-color: #375470;
-   right: 25px;
-   top: 1%;
-   position: absolute;
+   /* right: 25px;
+   top: 1%; */
+   /* position: absolute; */
    color: white;
    text-align: center;
+   margin-left: 79%;
 }
 
 .header {
@@ -15,6 +16,8 @@
    position: fixed;
    width: 100%;
    background: transparent;
+   z-index: 1;
+   margin-top: 8px;
 }
 .logo {
    position: absolute;
@@ -24,9 +27,10 @@
 }
 
 .searchicon {
-   position: absolute;
-   right: 60px;
-   top: 6px;
+   position: fixed;
+   right: 39px;
+   top: 15px;
+   z-index: 2;
 }
 
 .additional p{

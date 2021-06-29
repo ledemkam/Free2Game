@@ -10,7 +10,7 @@ body{
 }
 
 .detailsgame{
-    margin-top: 2%;
+    position: relative;
 }
 
 p, td{
@@ -20,7 +20,7 @@ p, td{
 .detailimg img{
     width: 88.52vw;
     height: 62.23vh;
-    margin-top: 25px;
+    margin-top: 52px;
     margin-left: 124px;
     border-radius: 12px;
     object-fit:cover;
@@ -65,10 +65,6 @@ h2{
     display: inline-block;
 }
 
-.detailsgame{
-    position: relative;
-}
-
 .detailsabout{
     position: absolute;
     right: 10%;
@@ -81,7 +77,7 @@ h2{
 .imgoneandtwo{
     display: flex;
     margin-left: 12%;
-    margin-top: 25%;
+    margin-top: 20%;
 }
 
 .imgone{
@@ -131,6 +127,7 @@ h2{
 
 .info3 p{
     margin-top: 3%;
+    margin-left: 2%;
 }
 
 .lastpart{
@@ -144,23 +141,21 @@ h2{
     margin-left: 9%;
 }
 
-.system{
-    margin-left: 11%;
+.additional p{
+    width: 90%;
 }
 
 th{
     text-align: left;
+    width: 50%;
 }
 
-table th:last-child{
-    padding-left: 5%;
+.system table{
+    width: 80%;
 }
 
-table td:last-child{
-    padding-left: 5%;
+.system{
+    margin-left: 3%;
 }
 
-.detailimg img{
-    margin-top: 5%;
-}
 

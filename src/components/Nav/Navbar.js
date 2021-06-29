@@ -1,25 +1,41 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useState } from 'react';
+// import styled from 'styled-components';
 import Burger from './Burger';
+import { VscHome } from 'react-icons/vsc';
+import { GiRetroController } from 'react-icons/gi';
+import { TiPlusOutline } from 'react-icons/ti';
+import "../../css/Navigation.css"
 
-const Nav = styled.nav`
-   width: 55px;
-   height: 100%;
-   padding: 0 20px;
-   display: flex;
-   position: fixed;
-   justify-content: space-between;
+import {
+   Link
+} from "react-router-dom";
 
-   .logo {
-      padding: 15px 0;
-   }
-`;
+
+// align - items: flex - end;
 
 const Navbar = () => {
+   // const [open, setOpen] = useState(false);
    return (
-      <Nav>
-         <Burger />
-      </Nav>
+      <nav>
+         {/* <Burger /> */}
+         <div className="burgerMenu">
+            <div />
+            <div />
+            <div />
+         </div>
+         <ul>
+            <li>
+               <Link to="/"><VscHome fontSize="30px" />Home</Link>
+            </li>
+            <li>
+               <Link to="/Allgames"><GiRetroController fontSize="30px" />All Game</Link>
+            </li>
+            <li>
+               <Link to="/AddedPage"><TiPlusOutline fontSize="30px" />Recently Added</Link>
+            </li>
+         </ul>
+
+      </nav>
    );
 };
 
