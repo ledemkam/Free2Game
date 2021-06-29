@@ -7,7 +7,6 @@ import {
    Link
 } from "react-router-dom";
 
-
 // align - items: flex - end;
 
 const Navbar = () => {
