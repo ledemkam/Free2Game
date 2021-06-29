@@ -6,9 +6,11 @@ const Header = () => {
     return (
         <>
             <div className="header">
-                <img className="logo" src="./img/logo.png" alt="" />
-                <input className="searchfield" type="text" />{' '}
-                <button><img className="searchicon" src="./img/search.png" alt="" /></button>
+                <div className="logo"><img src="./img/logo.png" alt="" /></div>
+                <form action="">
+                    <input className="searchfield" type="text" />{' '}
+                    <button><img className="searchicon" src="./img/search.png" alt="" /></button>
+                </form>
             </div>
         </>
     );
