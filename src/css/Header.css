@@ -5,6 +5,8 @@
    z-index: 1;
    margin-top: 10px;
    display: flex;
+   justify-content: space-between;
+   padding: 0 5% 0 10%;
 }
 
 .searchfield {
@@ -16,7 +18,12 @@
    text-align: center;
 }
 
+form {
+   position: relative;
+}
+
 button {
+   position: absolute;
    background-color: transparent;
    border-style: none;
 }

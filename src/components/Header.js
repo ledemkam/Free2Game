@@ -7,8 +7,10 @@ const Header = () => {
         <>
             <div className="header">
                 <img className="logo" src="./img/logo.png" alt="" />
-                <input className="searchfield" type="text" />{' '}
-                <button><img className="searchicon" src="./img/search.png" alt="" /></button>
+                <form action="">
+                    <input className="searchfield" type="text" />{' '}
+                    <button><img className="searchicon" src="./img/search.png" alt="" /></button>
+                </form>
             </div>
         </>
     );
