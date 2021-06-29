@@ -1,7 +1,6 @@
 import Navbar from './components/Nav/Navbar';
 import Home from './components/Home';
 import './App.css';
-import Test2 from './components/Test2';
 import DetailsDyn from './components/DetailsDyn';
 
 
@@ -16,23 +15,21 @@ function App() {
   // const menuId = 'main-menu';
 
   return (
-    // <>
-    //   <Router>
-    //     {/* <GlobalStyles /> */}
-    //     <div>
-    //       <Header />
-    //       {/* <Navbar /> */}
-    //     </div>
-    //     <Switch>
-    //       <Route path="/" component={Home} exact />
-    //       <Route path="/Allgames" component={Allgames} exact />
-    //       <Route path="/AddedPage" component={AddedPage} exact />
-    //       <Route path="/" component={Test2} exact />
-    //       <Route path="/api/:myId" component={DetailsDyn} />
-    //     </Switch>
-    //   </Router>
-    // </>
-    <Allgames />
+    <>
+      <Router>
+        {/* <GlobalStyles /> */}
+        <div>
+          <Header />
+          {/* <Navbar /> */}
+        </div>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/Allgames" component={Allgames} exact />
+          <Route path="/AddedPage" component={AddedPage} exact />
+          <Route path="/api/:myId" component={DetailsDyn} />
+        </Switch>
+      </Router>
+    </>
   );
 }
 

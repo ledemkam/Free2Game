@@ -1,19 +1,22 @@
 import "../css/Card.css"
 import Button from "./Button";
-
+import { Link } from "react-router-dom";
 const Card = (props) => {
     console.log(props)
 
     return (
         <figure className="card">
-            <section>
-                <img src={props.data.thumbnail} alt="" />
+            <img src={props.data.thumbnail} alt="" />
+            <section className="description">
+                <h3>{props.data.title}</h3>
                 <p>{props.data.short_description}</p>
-                <Button name="read more" />
             </section>
+            <div className="readMore">
+                <Link to={`/api/${props.data.id}`}><Button name="read more" /></Link>
+            </div>
             <div className="category">
-                <span>{props.data.platform === "PC (Windows)" ? <img src="windows.png" alt="" /> : <img src="browser.png" alt="" />}</span>
-                <span>{props.data.genre}</span>
+                {props.data.platform === "PC (Windows)" ? <img className="border" src="windows.png" alt="" /> : <img className="border" src="browser.png" alt="" />}
+                <div className="border">{props.data.genre}</div>
             </div>
         </figure>
     );
