@@ -22,7 +22,6 @@ const Allgames = () => {
             </div>
             <ApiAllgames />
          </div>
-         <ApiAllgames />
       </div>
    );
 };

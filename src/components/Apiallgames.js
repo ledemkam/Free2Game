@@ -3,7 +3,9 @@ import Card from './Card'
 
 class ApiAllgames extends Component {
     state = {
-        data: []
+        data: [],
+        filterPlatform: [true, false, false],
+        filterGenre: []
     }
     componentDidMount() {
         fetch('https://www.freetogame.com/api/games')

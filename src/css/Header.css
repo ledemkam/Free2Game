@@ -2,9 +2,9 @@
    width: 277px;
    height: 40px;
    border-radius: 12px;
-   background-color: #0d2538;
-   right: 13px;
-   top: 1, 17%;
+   background-color: #375470;
+   right: 25px;
+   top: 1%;
    position: absolute;
    color: white;
    text-align: center;
@@ -18,12 +18,21 @@
 }
 .logo {
    position: absolute;
-   left: 4%;
-   top: 1, 17%;
+   left: 9%;
+   transition: width 0.3s;
+   top: 1%;
 }
 
 .searchicon {
    position: absolute;
-   right: 43px;
-   top: 8px;
+   right: 60px;
+   top: 6px;
+}
+
+.additional p {
+   margin-bottom: 5%;
+}
+
+.system h2 {
+   margin-bottom: 5%;
 }

@@ -37,6 +37,12 @@ const Burger = () => {
 
    return (
       <>
+         {/* <div open={open} onClick={() => setOpen(!open)}>
+            <div />
+            <div />
+            <div />
+         </div>
+         <LeftNav open={open} /> */}
          <StyledBurger open={open} onClick={() => setOpen(!open)}>
             <div className="animedBurger" />
             <div />

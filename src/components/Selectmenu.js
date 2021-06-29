@@ -7,16 +7,17 @@ class Select extends Component {
         super();
 
         this.state = {
-            showMenu: false,
+            isToggleOn: false,
+            isCheckedWindows: false
         }
 
         this.showMenu = this.showMenu.bind(this);
     }
 
     showMenu() {
-        this.setState({
-            showMenu: true,
-        });
+        this.setState(prevState => ({
+            isToggleOn: !prevState.isToggleOn
+        }))
     }
 
 
@@ -28,11 +29,11 @@ class Select extends Component {
                         Platform<img src="./img/arrowdown.png" alt="" />
                     </button>
                     {
-                        this.state.showMenu
+                        this.state.isToggleOn
                             ? (
                                 <div className="menu">
                                     <div><input type="checkbox" /><span> All Platforms </span></div> <br />
-                                    <div><input type="checkbox" /><span> Windows (PC) </span></div><br />
+                                    <div><input type="checkbox" defaultChecked={this.state.isCheckedWindows} onChange={(e) => this.handleWindows(e)} /><span> Windows (PC) </span></div><br />
                                     <div><input type="checkbox" /><span> Browser (Web) </span></div>
                                 </div>
                             )

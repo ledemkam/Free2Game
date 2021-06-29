@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import '../css/Selectmenu.css';
 
-class Select1 extends Component {
+class Select11 extends Component {
     constructor() {
         super();
 
         this.state = {
-            showMenu1: false,
+            isToggleOn: false,
         }
 
         this.showMenu1 = this.showMenu1.bind(this);
@@ -16,12 +16,11 @@ class Select1 extends Component {
 
 
     showMenu1(event) {
-        event.preventDefault();
-
-        this.setState({
-            showMenu1: true,
-        });
+        this.setState(prevState => ({
+            isToggleOn: !prevState.isToggleOn
+        }))
     }
+
 
     render() {
         return (
@@ -32,7 +31,7 @@ class Select1 extends Component {
                 </button>
 
                 {
-                    this.state.showMenu1
+                    this.state.isToggleOn
                         ? (
                             <div className="menu1">
                                 <div><input type="checkbox" /><span> MMORPG </span></div> <br />
@@ -52,4 +51,4 @@ class Select1 extends Component {
     }
 }
 
-export default Select1;
+export default Select11;

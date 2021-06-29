@@ -1,6 +1,8 @@
 .card{
     background-color: #102130;
     border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }   
 
 .card img{
@@ -26,12 +28,12 @@
     border-top: 2px solid rgba(255, 255, 255, 0.2);
     color: #FFFFFF;
     display: flex;
-    margin: 0 5%;
+    margin:  0 5%;
     padding: 4vh 5% 4vh 0;
     justify-content: flex-start;
 }
 
-.card .category span{
+.card .category .border{
     border: 1px solid #FF4654;
     border-radius: 15px;
     padding: 6px 12px;
@@ -39,7 +41,7 @@
 }
 
 .card .category img{
-    width: 100%;
+    width: 15%;
     border-radius: 0;
     display: block;
 }
@@ -50,5 +52,12 @@
 }
 
 .card button{
-    margin: 4vh 5%  ;
+    margin: 0;
+}
+
+.card .readMore{
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 40px 0;
+    margin-left: 10%;
 }

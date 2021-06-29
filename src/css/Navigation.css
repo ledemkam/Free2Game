@@ -1,0 +1,26 @@
+.burgerMenu {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.burgerMenu div {
+    margin-top: 2%;
+    width: 2rem;
+    height: 0.25rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+nav {
+    height: 100vh;
+    position: fixed;
+    list-style: none;
+    text-decoration: none;
+    width: 300px;
+    border-right: 2px solid #ffffff;
+    background: #040f14;
+}
+
+nav a {
+    color: white;
+}
