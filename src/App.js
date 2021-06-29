@@ -7,7 +7,7 @@ import DetailsDyn from './components/DetailsDyn';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Header from './components/Header';
-//import Details from './components/Details';
+import Details from './components/Details';
 import Allgames from './components/Allgames';
 import AddedPage from "./components/AddedPage"
 
