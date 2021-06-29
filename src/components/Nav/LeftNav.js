@@ -4,19 +4,21 @@ import { VscHome } from 'react-icons/vsc';
 import { GiRetroController } from 'react-icons/gi';
 import { TiPlusOutline } from 'react-icons/ti';
 
+import { Link } from 'react-router-dom';
+
 const Ul = styled.ul`
    list-style: none;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-content: center;
+   padding-left: 3%;
    li {
       padding: 25px 10px;
       color: #fff;
       width: 200px;
       height: 15px;
    }
-
    border-right: 2px solid #ffffff;
    font-size: 20px;
    background-color: #0d2538;
@@ -37,13 +39,22 @@ const LeftNav = ({ open }) => {
    return (
       <Ul open={open}>
          <li>
-            <VscHome fontSize="30px" /> Home
+            <Link to="/">
+               <VscHome fontSize="30px" />
+               Home
+            </Link>
          </li>
          <li>
-            <GiRetroController fontSize="30px" /> All Game
+            <Link to="/Allgames">
+               <GiRetroController fontSize="30px" />
+               All Game
+            </Link>
          </li>
          <li>
-            <TiPlusOutline fontSize="30px" /> Recently Added
+            <Link to="/AddedPage">
+               <TiPlusOutline fontSize="30px" />
+               Recently Added
+            </Link>
          </li>
       </Ul>
    );

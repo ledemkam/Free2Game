@@ -9,6 +9,7 @@ const Nav = styled.nav`
    display: flex;
    position: fixed;
    justify-content: space-between;
+   padding-left: 3%;
 
    .logo {
       padding: 15px 0;

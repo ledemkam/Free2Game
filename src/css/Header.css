@@ -2,7 +2,7 @@
    width: 277px;
    height: 40px;
    border-radius: 12px;
-   background-color: #375470;
+   background-color: #0d2538;
    right: 13px;
    top: 1, 17%;
    position: absolute;
@@ -20,7 +20,6 @@
    position: absolute;
    left: 4%;
    top: 1, 17%;
-   transition: transform 0.3s ease-in-out;
 }
 
 .searchicon {
