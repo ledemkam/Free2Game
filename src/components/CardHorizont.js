@@ -1,6 +1,6 @@
 import "../css/CardHorizont.css"
 import Button from "./Button";
-
+import { Link } from "react-router-dom";
 const CardHorizont = (props) => {
     console.log(props)
 
@@ -21,7 +21,7 @@ const CardHorizont = (props) => {
             <div>
                 <section className="description">
                     <h3>{props.data.title}</h3>
-                    <Button name="read more" />
+                    <Link to={`/api/${props.data.id}`}><Button name="read more" /></Link>
                 </section>
                 <div className="category">
                     <span>{props.data.platform === "PC (Windows)" ? <img src="windows.png" alt="" /> : <img src="browser.png" alt="" />}</span>
