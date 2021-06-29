@@ -39,24 +39,38 @@
 }
 
 .menu {
-    width: 261px;
-    height: 51px;
+    width: 280px;
+    height: 190px;
     border-radius: 12px;
     position: absolute;
+    margin-left: 2%;
+    background-color: #102130;
+    padding: 20px;
 }
 
 .menu1 {
-    width: 261px;
-    height: 51px;
+    width: 280px;
+    height: 250px;
     border-radius: 12px;
     position: absolute;
+    margin-left: 2%;
+    background-color: #102130;
+    padding: 20px;
+    
 }
 
 .menu2 {
-    width: 261px;
-    height: 51px;
+    width: 280px;
+    height: 250px;
     border-radius: 12px;
     position: absolute;
+    margin-left: 2%;
+    background-color: #102130;
+    padding: 20px;
+}
+
+.menuwrapper{
+    background-color: white;
 }
 
 .menu input{
@@ -94,10 +108,12 @@ button img{
 
 .select{
     float: left;
+    margin-right: 2%;
 }
 
 .select1{
     float:left;
+    margin-right: 2%;
 }
 
 .select2{

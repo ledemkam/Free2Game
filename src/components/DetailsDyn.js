@@ -30,7 +30,7 @@ class DetailsDyn extends Component {
                         <div className="detailsgame">
                             <Header />
                             <div className="detailimg">
-                                {/* <img src={this.state.data.screenshots[0].image} alt="" /> */}
+                                <img src={this.state.data.screenshots[0].image} alt="" />
                             </div>
                             <div>
                                 <h1 className="detailtitle">{this.state.data.title}</h1>
@@ -39,8 +39,8 @@ class DetailsDyn extends Component {
                                 </div>
                                 <h2 className="platform">Platform: {this.state.data.platform}</h2>
                                 <p className="genre"> {this.state.data.genre}</p>
-                                <Button name="Play now" />
-                                {/* <a href={this.state.data.game_url}><Button name="Play now" /></a> */}
+
+                                <a href={this.state.data.game_url}><Button name="Play now" /></a>
                             </div>
                             <div className="detailsabout">
                                 <h2>About</h2>
@@ -49,17 +49,17 @@ class DetailsDyn extends Component {
                         </div>
                         <div className="imgoneandtwo">
                             <div className="imgone">
-                                {/* <img src={this.state.data.screenshots[1].image} alt="" /> */}
+                                <img src={this.state.data.screenshots[1].image} alt="" />
                             </div>
                             <div className="imgtwo">
-                                {/* <img src={this.state.data.screenshots[2].image} alt="" /> */}
+                                <img src={this.state.data.screenshots[2].image} alt="" />
                             </div>
                         </div>
                         <div className="lastpart">
                             <div className="additional">
                                 <div>
                                     <h2>Additional Information</h2>
-                                    <p>Please note this free-to-play game may or may not offer optional <br /> in-game purchases.</p>
+                                    <p>Please note this free-to-play game may or may not offer optional in-game purchases.</p>
                                 </div>
                                 <div className="info1">
                                     <h3>Developer</h3>
