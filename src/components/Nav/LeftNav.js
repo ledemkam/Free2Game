@@ -13,7 +13,7 @@ const Ul = styled.ul`
    display: flex;
    flex-direction: column;
    justify-content: center;
-   // align-items: flex-end;
+   align-items: flex-end;
 
    border-right: 2px solid #ffffff;
    font-size: 20px;
