@@ -15,7 +15,8 @@ class ApiAllgames extends Component {
             isToggleOn2: false,
             data: [],
             dataOriginal: [],
-            isChechedShooter: false
+            isChechedShooter: false,
+            platform: [{ feld: "All", isChecked: false }, { feld: "PC (Windows)", isChecked: false }, { feld: "Web Browser", isChecked: false }]
         }
 
         this.showMenu = this.showMenu.bind(this);
@@ -24,11 +25,7 @@ class ApiAllgames extends Component {
 
     }
 
-    // state = {
-    //          filterPlatform: [true, false, false],
-    //     filterGenre: [false, false, false, false],
-    //     filterSort: [false, false, false, false],
-    // }
+
     componentDidMount() {
         fetch('https://www.freetogame.com/api/games')
             .then(response => response.json())
@@ -76,10 +73,49 @@ class ApiAllgames extends Component {
         console.log(temp2)
         this.setState({ data: temp2 })
     }
+    handleAllPlatform = (item) => {
+        let platformupdate = this.state.platform
+        platformupdate[item].isChecked = !this.state.platform[item].isChecked
+        console.log(platformupdate)
+        this.setState({ platform: platformupdate })
+        this.setState({ data: this.state.dataOriginal })
+    }
 
     handleAll = () => {
         this.setState({ isChechedShooter: !this.state.isChechedShooter })
         this.setState({ data: this.state.dataOriginal })
+    }
+
+    handlePlatform = (item) => {
+
+        this.setState(prevState => ({
+            isToggleOn: !prevState.isToggleOn
+        }))
+
+        let platformupdate = this.state.platform
+        platformupdate[item].isChecked = !this.state.platform.isChecked
+
+        this.setState({ platform: platformupdate })
+        console.log(this.state.platform)
+        this.handleFilter()
+    }
+
+    handleFilter = () => {
+        let activePlatforms = this.state.platform.map(pl => {
+            if (pl.isChecked) {
+                return pl.feld
+            }
+        })
+        let dataShooter = [...this.state.data]
+        let temp2 = dataShooter.filter(elem => {
+            if (activePlatforms.includes(elem.platform)) {
+                console.log("Gefunden")
+                return elem
+            }
+
+        })
+        console.log(temp2)
+        this.setState({ data: temp2 })
     }
 
     render() {
@@ -95,8 +131,8 @@ class ApiAllgames extends Component {
                                 ? (
                                     <div className="menu">
                                         <div><input type="checkbox" /><span> All Platforms </span></div> <br />
-                                        <div><input type="checkbox" /><span> Windows (PC) </span></div><br />
-                                        <div><input type="checkbox" /><span> Browser (Web) </span></div>
+                                        <div><input type="checkbox" defaultChecked={this.state.platform[1].isChecked} onChange={(e) => this.handlePlatform(1)} /><span> Windows (PC) </span></div><br />
+                                        <div><input type="checkbox" defaultChecked={this.state.platform[2].isChecked} onChange={(e) => this.handlePlatform(2)} /><span> Browser (Web) </span></div>
                                     </div>
                                 )
                                 : (
@@ -148,9 +184,20 @@ class ApiAllgames extends Component {
                         }
                     </div>
                     {
+                        this.state.platform[1].isChecked ?
+                            <div><input type="checkbox" defaultChecked={this.state.platform[1].isChecked} onChange={(e) => this.handleAllPlatform(1)} /><span> Windows (PC) </span></div>
+                            : null
+                    }
+                    {
+                        this.state.platform[2].isChecked ?
+                            <div><input type="checkbox" defaultChecked={this.state.platform[2].isChecked} onChange={(e) => this.handleAllPlatform(2)} /><span> Browser (Web) </span></div>
+                            : null
+                    }
+                    {
                         this.state.isChechedShooter ?
                             <div><input type="checkbox" defaultChecked={this.state.isChechedShooter} onChange={(e) => this.handleAll(e)} /><span> Shooter</span></div>
                             : null
+
                     }
                 </div>
                 <div className="apiallgames grid4">
