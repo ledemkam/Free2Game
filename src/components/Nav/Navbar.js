@@ -24,16 +24,19 @@ const Navbar = () => {
             <li>
                <Link to="/">
                   <VscHome fontSize="30px" />
+                  Home
                </Link>
             </li>
             <li>
                <Link to="/Allgames">
                   <GiRetroController fontSize="30px" />
+                  All Game
                </Link>
             </li>
             <li>
                <Link to="/AddedPage">
                   <TiPlusOutline fontSize="30px" />
+                  Recently Added
                </Link>
             </li>
          </ul>
