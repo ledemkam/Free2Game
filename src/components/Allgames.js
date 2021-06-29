@@ -1,4 +1,4 @@
-import Header from './Header';
+//import Header from './Header';
 // import Button from './Button';
 import '../css/Allgames.css';
 // import React, { Component } from 'react';
