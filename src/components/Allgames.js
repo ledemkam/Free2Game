@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+//import Header from './Header';
+>>>>>>> origin/rico
 // import Button from './Button';
 import '../css/Allgames.css';
 // import React, { Component } from 'react';
@@ -20,4 +24,4 @@ const Allgames = () => {
    );
 };
 
-export default Allgames
+export default Allgames;
