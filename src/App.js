@@ -21,7 +21,7 @@ function App() {
         {/* <GlobalStyles /> */}
         <div>
           <Header />
-          {/* <Navbar /> */}
+          <Navbar />
         </div>
         <Switch>
           <Route path="/" component={Home} exact />
