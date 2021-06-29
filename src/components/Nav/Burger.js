@@ -5,13 +5,10 @@ import LeftNav from './LeftNav';
 const StyledBurger = styled.div`
    width: 2rem;
    height: 2rem;
-   position: absolute;
    top: 1, 17%;
    left: 25px;
-   z-index: 20;
    display: flex;
    justify-content: space-around;
-   flex-flow: column nowrap;
 
    div {
       width: 2rem;
