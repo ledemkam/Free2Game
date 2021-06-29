@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Button from './Button'
+import Header from './Header'
 import '../css/Details.css';
+// import { Link } from "react-router-dom";
 
 class DetailsDyn extends Component {
     state = {
@@ -26,6 +28,7 @@ class DetailsDyn extends Component {
                 {this.state.isLoaded ?
                     <div className="item">
                         <div className="detailsgame">
+                            <Header />
                             <div className="detailimg">
                                 {/* <img src={this.state.data.screenshots[0].image} alt="" /> */}
                             </div>
@@ -35,8 +38,9 @@ class DetailsDyn extends Component {
                                     <img src={this.state.data.thumbnail} alt="" />
                                 </div>
                                 <h2 className="platform">Platform: {this.state.data.platform}</h2>
-                                <p className="genre">Genre {this.state.data.genre}</p>
+                                <p className="genre"> {this.state.data.genre}</p>
                                 <Button name="Play now" />
+                                {/* <a href={this.state.data.game_url}><Button name="Play now" /></a> */}
                             </div>
                             <div className="detailsabout">
                                 <h2>About</h2>
