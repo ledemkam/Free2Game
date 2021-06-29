@@ -1,9 +1,10 @@
+
 import Header from './Header';
-import Button from './Button';
+// import Button from './Button';
 import '../css/Allgames.css';
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 import ApiAllgames from './Apiallgames';
-import Card from './Card';
+// import Card from './Card';
 import Select from './Selectmenu';
 import Select1 from './Selectmenu1';
 import Select2 from './Selectmenu2';
@@ -28,4 +29,4 @@ const Allgames = () => {
    );
 };
 
-export default Allgames;
+export default Allgames

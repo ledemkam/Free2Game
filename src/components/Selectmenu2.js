@@ -7,18 +7,16 @@ class Select2 extends Component {
         super();
 
         this.state = {
-            showMenu2: false,
+            isToggleOn: false,
         }
 
         this.showMenu2 = this.showMenu2.bind(this);
     }
 
     showMenu2(event) {
-        event.preventDefault();
-
-        this.setState({
-            showMenu2: true,
-        });
+        this.setState(prevState => ({
+            isToggleOn: !prevState.isToggleOn
+        }))
     }
 
     render() {
@@ -29,7 +27,7 @@ class Select2 extends Component {
                 </button>
 
                 {
-                    this.state.showMenu2
+                    this.state.isToggleOn
                         ? (
                             <div className="menu2">
                                 <div><input type="checkbox" /><span> Relevance </span></div> <br />
