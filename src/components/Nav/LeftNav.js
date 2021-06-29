@@ -13,13 +13,7 @@ const Ul = styled.ul`
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-content: center;
-   li {
-      padding: 25px 10px;
-      color: #fff;
-      width: 200px;
-      height: 15px;
-   }
+   // align-items: flex-end;
 
    border-right: 2px solid #ffffff;
    font-size: 20px;
@@ -32,8 +26,17 @@ const Ul = styled.ul`
    width: 300px;
    padding-top: 3.5rem;
    transition: transform 0.3s ease-in-out;
+
    li {
+      margin-bottom: 10%
+   }
+
+   a {
+      text-decoration: none;
       color: #fff;
+      background-color: #FF4654;
+      padding: 2% 5%;
+      border-radius: 10px;
    }
 `;
 
