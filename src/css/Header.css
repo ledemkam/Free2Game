@@ -19,8 +19,8 @@
 .logo {
    position: absolute;
    left: 4%;
-   transition: width 0.3s;
    top: 1, 17%;
+   transition: transform 0.3s ease-in-out;
 }
 
 .searchicon {

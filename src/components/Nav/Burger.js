@@ -18,8 +18,9 @@ const StyledBurger = styled.div`
       height: 0.25rem;
       background-color: ${({ open }) => (open ? '#ccc' : '#fff')};
       border-radius: 10px;
-      transform-origin: 1px;
-      transition: all 0.5s linear;
+      transform-origin: 1px center;
+      transition: all 0.3s linear;
+
       &:nth-child(1) {
          transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
       }
@@ -40,9 +41,9 @@ const Burger = () => {
    return (
       <>
          <StyledBurger open={open} onClick={() => setOpen(!open)}>
+            <div className="animedBurger" />
             <div />
-            <div />
-            <div />
+            <div className="animedBurger" />
          </StyledBurger>
          <LeftNav open={open} />
       </>
