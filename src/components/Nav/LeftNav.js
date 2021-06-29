@@ -18,6 +18,7 @@ const Ul = styled.ul`
       color: #fff;
       width: 200px;
       height: 15px;
+      font-size: 25px;
    }
    border-right: 2px solid #ffffff;
    font-size: 20px;
@@ -41,18 +42,21 @@ const LeftNav = ({ open }) => {
          <li>
             <Link to="/">
                <VscHome fontSize="30px" />
+               {''}
                Home
             </Link>
          </li>
          <li>
             <Link to="/Allgames">
                <GiRetroController fontSize="30px" />
+               {''}
                All Game
             </Link>
          </li>
          <li>
             <Link to="/AddedPage">
                <TiPlusOutline fontSize="30px" />
+               {''}
                Recently Added
             </Link>
          </li>
