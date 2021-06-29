@@ -25,7 +25,7 @@ const StyledBurger = styled.div`
       }
       &:nth-child(2) {
          transform: ${({ open }) =>
-            open ? 'translateX(100%)' : 'translateX(0)'};
+      open ? 'translateX(100%)' : 'translateX(0)'};
          opacity: ${({ open }) => (open ? 0 : 1)};
       }
       &:nth-child(3) {
@@ -39,6 +39,12 @@ const Burger = () => {
 
    return (
       <>
+         {/* <div open={open} onClick={() => setOpen(!open)}>
+            <div />
+            <div />
+            <div />
+         </div>
+         <LeftNav open={open} /> */}
          <StyledBurger open={open} onClick={() => setOpen(!open)}>
             <div />
             <div />

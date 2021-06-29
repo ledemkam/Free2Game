@@ -12,7 +12,6 @@ import Select2 from './Selectmenu2';
 const Allgames = () => {
    return (
       <div className="detailsgame">
-         <Header />
          <div className="detailimg">
             <img src="../img/allgames.png" alt="" />
          </div>
