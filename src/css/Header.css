@@ -6,7 +6,11 @@
    margin-top: 10px;
    display: flex;
    justify-content: space-between;
-   padding: 0 5% 0 10%;
+   padding: 0 2% 0 10%;
+}
+
+form {
+   position: relative;
 }
 
 .searchfield {
@@ -16,14 +20,13 @@
    background-color: #375470;
    color: white;
    text-align: center;
+   border-style: none;
 }
 
-form {
-   position: relative;
-}
-
-button {
+form button {
    position: absolute;
    background-color: transparent;
    border-style: none;
+   top: 10%;
+   right: 10%;
 }
