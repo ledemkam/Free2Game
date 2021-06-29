@@ -1,6 +1,3 @@
-import React, { useState } from 'react';
-// import styled from 'styled-components';
-import Burger from './Burger';
 import { VscHome } from 'react-icons/vsc';
 import { GiRetroController } from 'react-icons/gi';
 import { TiPlusOutline } from 'react-icons/ti';
@@ -17,7 +14,6 @@ const Navbar = () => {
    // const [open, setOpen] = useState(false);
    return (
       <nav>
-         {/* <Burger /> */}
          <div className="burgerMenu">
             <div />
             <div />

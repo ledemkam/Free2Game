@@ -14,7 +14,7 @@ class AddedPage extends Component {
     }
     render() {
         return (<>
-            <section id="hero">
+            <section id="hero" className="addPageHero">
                 <img src="../img/addedPagePic.png" alt="" />
                 <h1>Recently Added</h1>
             </section>

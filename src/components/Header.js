@@ -6,7 +6,7 @@ const Header = () => {
         <div className="header">
             <img className="logo" src="./img/logo.png" alt="" />
             <input className="searchfield" type="text" />{' '}
-            <img className="searchicon" src="./img/search.png" alt="" />
+            <button><img className="searchicon" src="./img/search.png" alt="" /></button>
         </div>
     );
 };

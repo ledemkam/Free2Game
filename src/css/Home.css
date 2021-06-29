@@ -1,18 +1,11 @@
 #hero img {
    width: 100%;
    object-fit: cover;
-   padding-top: 5%;
+   padding-top: 64px;
    padding-left: 4%;
 }
 
-#hero h1 {
-   font-family: Oswald;
-   font-size: 3rem;
-   font-weight: 700;
-   color: #fff;
-   width: 388px;
-   text-transform: uppercase;
-   position: absolute;
+.homeHero h1 {
    left: 10%;
    bottom: 20%;
 }
@@ -44,3 +37,10 @@ main h2 {
 #topGamesWeb p {
    display: none;
 }
+
+/* @media (max-width: 426px) {
+   .grid4,
+   .grid2 {
+      display: none;
+   }
+} */

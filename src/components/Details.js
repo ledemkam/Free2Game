@@ -1,9 +1,6 @@
 import '../css/Details.css';
 import '../css/Button.css';
 import Header from './Header'
-import Button from './Button'
-
-
 
 const Details = () => {
     return (

@@ -1,42 +1,21 @@
+.header {
+   height: 64px;
+   position: fixed;
+   z-index: 1;
+   margin-top: 10px;
+   display: flex;
+}
+
 .searchfield {
    width: 277px;
    height: 40px;
    border-radius: 12px;
    background-color: #375470;
-   /* right: 25px;
-   top: 1%; */
-   /* position: absolute; */
    color: white;
    text-align: center;
-   margin-left: 79%;
 }
 
-.header {
-   height: 50px;
-   position: fixed;
-   width: 100%;
-   background: transparent;
-   z-index: 1;
-   margin-top: 8px;
-}
-.logo {
-   position: absolute;
-   left: 9%;
-   transition: width 0.3s;
-   top: 1%;
-}
-
-.searchicon {
-   position: fixed;
-   right: 39px;
-   top: 15px;
-   z-index: 2;
-}
-
-.additional p{
-   margin-bottom: 5%;
-}
-
-.system h2{
-   margin-bottom: 5%;
+button {
+   background-color: transparent;
+   border-style: none;
 }
