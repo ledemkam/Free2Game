@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <>
             <div className="header">
-                <div className="logo"><img src="./img/logo.png" alt="" /></div>
+                <img className="logo" src="./img/logo.png" alt="" />
                 <form action="">
                     <input className="searchfield" type="text" />{' '}
                     <button><img className="searchicon" src="./img/search.png" alt="" /></button>

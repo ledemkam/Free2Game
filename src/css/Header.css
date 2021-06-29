@@ -6,10 +6,7 @@
    margin-top: 10px;
    display: flex;
    padding: 0 2% 0 10% ;
-}
 
-.logo {
-   flex-grow: 1;
 }
 
 form {
