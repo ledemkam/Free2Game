@@ -2,7 +2,7 @@ import "../css/Card.css"
 import Button from "./Button";
 import { Link } from "react-router-dom";
 const Card = (props) => {
-    console.log(props)
+    // console.log(props)
 
     return (
         <figure className="card">

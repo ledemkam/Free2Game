@@ -36,3 +36,19 @@ body {
    display: flex;
    grid-column: 2/3;
 }
+
+.homeHero h1,
+.addPageHero h1  {
+   font-family: Oswald;
+   font-size: 3rem;
+   font-weight: 700;
+   color: #fff;
+   width: 388px;
+   text-transform: uppercase;
+   position: absolute;
+}
+
+.addPageHero h1 {
+   left: 10%;
+   bottom: 30%;
+}

@@ -14,6 +14,7 @@ class Select extends Component {
         this.showMenu = this.showMenu.bind(this);
     }
 
+
     showMenu() {
         this.setState(prevState => ({
             isToggleOn: !prevState.isToggleOn
