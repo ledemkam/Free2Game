@@ -16,7 +16,8 @@ class ApiAllgames extends Component {
             data: [],
             dataOriginal: [],
             isChechedShooter: false,
-            platform: [{ feld: "All", isChecked: false }, { feld: "PC (Windows)", isChecked: false }, { feld: "Web Browser", isChecked: false }]
+            platform: [{ feld: "All", isChecked: false }, { feld: "PC (Windows)", isChecked: false }, { feld: "Web Browser", isChecked: false }],
+            genre: [{ feld: "MMORPG", isChecked: false }, { feld: "Shooter", isChecked: false }, { feld: "Strategy", isChecked: false }, { feld: "MOBA", isChecked: false }]
         }
 
         this.showMenu = this.showMenu.bind(this);
@@ -53,26 +54,8 @@ class ApiAllgames extends Component {
         }))
     }
 
-    handleShooter = () => {
+    // Platform wurde zurückgesetzt
 
-        this.setState(prevState => ({
-            isToggleOn1: !prevState.isToggleOn1
-        }))
-
-        this.setState({ isChechedShooter: !this.state.isChechedShooter })
-
-        console.log(this.state.data)
-        let dataShooter = [...this.state.data]
-        let temp2 = dataShooter.filter(elem => {
-            if (elem.genre === "Shooter") {
-                console.log("Gefunden")
-                return elem
-            }
-
-        })
-        console.log(temp2)
-        this.setState({ data: temp2 })
-    }
     handleAllPlatform = (item) => {
         let platformupdate = this.state.platform
         platformupdate[item].isChecked = !this.state.platform[item].isChecked
@@ -80,12 +63,17 @@ class ApiAllgames extends Component {
         this.setState({ platform: platformupdate })
         this.setState({ data: this.state.dataOriginal })
     }
-
-    handleAll = () => {
-        this.setState({ isChechedShooter: !this.state.isChechedShooter })
+    // Genre wurde zurückgesetzt
+    handleAllGenre = (item) => {
+        let genreUpdate = this.state.genre
+        genreUpdate[item].isChecked = !this.state.genre[item].isChecked
+        console.log(genreUpdate)
+        this.setState({ genre: genreUpdate })
         this.setState({ data: this.state.dataOriginal })
+        console.log(this.state.platform)
     }
 
+    // Platform wurde gewählt
     handlePlatform = (item) => {
 
         this.setState(prevState => ({
@@ -99,7 +87,21 @@ class ApiAllgames extends Component {
         console.log(this.state.platform)
         this.handleFilter()
     }
+    // Genre wurde gewählt
+    handleGenre = (item) => {
 
+        this.setState(prevState => ({
+            isToggleOn1: !prevState.isToggleOn1
+        }))
+
+        let genreUpdate = this.state.genre
+        genreUpdate[item].isChecked = !this.state.genre.isChecked
+
+        this.setState({ genre: genreUpdate })
+        console.log(this.state.genre)
+        this.handleFilterGenre()
+    }
+    // Filter für Platform
     handleFilter = () => {
         let activePlatforms = this.state.platform.map(pl => {
             if (pl.isChecked) {
@@ -109,7 +111,25 @@ class ApiAllgames extends Component {
         let dataShooter = [...this.state.data]
         let temp2 = dataShooter.filter(elem => {
             if (activePlatforms.includes(elem.platform)) {
-                console.log("Gefunden")
+                console.log("Gefunden Platform")
+                return elem
+            }
+
+        })
+        console.log(temp2)
+        this.setState({ data: temp2 })
+    }
+    // Filter für Genre
+    handleFilterGenre = () => {
+        let activeGenres = this.state.genre.map(pl => {
+            if (pl.isChecked) {
+                return pl.feld
+            }
+        })
+        let dataShooter = [...this.state.data]
+        let temp2 = dataShooter.filter(elem => {
+            if (activeGenres.includes(elem.genre)) {
+                console.log("Gefunden Genre")
                 return elem
             }
 
@@ -150,10 +170,10 @@ class ApiAllgames extends Component {
                             this.state.isToggleOn1
                                 ? (
                                     <div className="menu1">
-                                        <div><input type="checkbox" /><span> MMORPG </span></div> <br />
-                                        <div><input type="checkbox" defaultChecked={this.state.isChechedShooter} onChange={(e) => this.handleShooter(e)} /><span> Shooter</span></div><br />
-                                        <div><input type="checkbox" /><span> Strategy </span></div>
-                                        <div className="moba"><input type="checkbox" /><span> MOBA </span></div>
+                                        <div><input type="checkbox" defaultChecked={this.state.genre[0].isChecked} onChange={(e) => this.handleGenre(0)} /><span> MMORPG </span></div> <br />
+                                        <div><input type="checkbox" defaultChecked={this.state.genre[1].isChecked} onChange={(e) => this.handleGenre(1)} /><span> Shooter</span></div><br />
+                                        <div><input type="checkbox" defaultChecked={this.state.genre[2].isChecked} onChange={(e) => this.handleGenre(2)} /><span> Strategy </span></div>
+                                        <div className="moba"><input type="checkbox" defaultChecked={this.state.genre[3].isChecked} onChange={(e) => this.handleGenre(3)} /><span> MOBA </span></div>
                                     </div>
 
                                 )
@@ -194,11 +214,28 @@ class ApiAllgames extends Component {
                             : null
                     }
                     {
-                        this.state.isChechedShooter ?
-                            <div><input type="checkbox" defaultChecked={this.state.isChechedShooter} onChange={(e) => this.handleAll(e)} /><span> Shooter</span></div>
+                        this.state.genre[0].isChecked ?
+                            <div><input type="checkbox" defaultChecked={this.state.genre[0].isChecked} onChange={(e) => this.handleAllGenre(0)} /><span> MMORPG</span></div>
+                            : null
+                    }
+                    {
+                        this.state.genre[1].isChecked ?
+                            <div><input type="checkbox" defaultChecked={this.state.genre[1].isChecked} onChange={(e) => this.handleAllGenre(1)} /><span> Shooter</span></div>
                             : null
 
                     }
+                    {
+                        this.state.genre[2].isChecked ?
+                            <div><input type="checkbox" defaultChecked={this.state.genre[2].isChecked} onChange={(e) => this.handleAllGenre(2)} /><span> Strategy </span></div>
+                            : null
+                    }
+                    {
+                        this.state.genre[3].isChecked ?
+                            <div className="moba"><input type="checkbox" defaultChecked={this.state.genre[3].isChecked} onChange={(e) => this.handleAllGenre(3)} /><span> MOBA </span></div>
+                            : null
+                    }
+
+
                 </div>
                 <div className="apiallgames grid4">
                     {this.state.data.map((ele, i) => <Card key={i} data={ele} />)
