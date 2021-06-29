@@ -1,23 +1,15 @@
-<<<<<<< HEAD
-=======
-//import React, { useState } from 'react';
-// import styled from 'styled-components';
-//import Burger from './Burger';
->>>>>>> origin/rico
+import '../../css/Navigation.css';
 import { VscHome } from 'react-icons/vsc';
 import { GiRetroController } from 'react-icons/gi';
 import { TiPlusOutline } from 'react-icons/ti';
-import '../../css/Navigation.css';
 
-<<<<<<< HEAD
-=======
-import { Link } from 'react-router-dom';
+import {
+   Link
+} from 'react-router-dom';
 
->>>>>>> origin/rico
 // align - items: flex - end;
 
 const Navbar = () => {
-   // const [open, setOpen] = useState(false);
    return (
       <nav>
          <div className="burgerMenu">

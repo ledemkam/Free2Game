@@ -38,8 +38,8 @@ import { Link } from 'react-router-dom';
 //    }
 // `;
 
-const LeftNav = ({ open }) => {
-   return (
+// const LeftNav = ({ open }) => {
+//    return (
       // <Ul open={open}>
       //    <li>
       //       <Link to="/"><VscHome fontSize="30px" /></Link>
@@ -54,27 +54,7 @@ const LeftNav = ({ open }) => {
       //       {/* <Link to="/AddedPage"><TiPlusOutline fontSize="30px" />Recently Added</Link> */}
       //    </li>
       // </Ul>
-      <nav open={open}>
-         <li>
-            <Link to="/">
-               <VscHome fontSize="30px" />
-            </Link>
-            {/* <Link to="/"><VscHome fontSize="30px" />Home</Link> */}
-         </li>
-         <li>
-            <Link to="/Allgames">
-               <GiRetroController fontSize="30px" />
-            </Link>
-            {/* <Link to="/Allgames"><GiRetroController fontSize="30px" />All Game</Link> */}
-         </li>
-         <li>
-            <Link to="/AddedPage">
-               <TiPlusOutline fontSize="30px" />
-            </Link>
-            {/* <Link to="/AddedPage"><TiPlusOutline fontSize="30px" />Recently Added</Link> */}
-         </li>
-      </nav>
-   );
-};
+//    );
+// };
 
-export default LeftNav;
+// export default LeftNav;
