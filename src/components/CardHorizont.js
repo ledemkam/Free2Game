@@ -11,7 +11,7 @@ const CardHorizont = (props) => {
                     backgroundImage: `url(${props.data.thumbnail})`,
                     width: "55%",
                     borderRadius: "1.5rem",
-                    backgroundSize: 'cover'
+                    backgroundSize: 'cover',
                 }}
             >
                 <div className="number">
