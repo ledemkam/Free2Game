@@ -15,20 +15,20 @@ nav {
 
 .burgerMenu {
     flex-grow: .5;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin: 15px 15px 0 15px;
+    align-items: flex-end;
 }
 
 .burgerMenu div {
-    margin-top: 2%;
+    margin-top: 10px;
     width: 2rem;
     height: 0.25rem;
     background-color: white;
     border-radius: 10px;
 }
 
-nav svg {
-    margin-right: 5%;
+nav span {
+    margin-left: 10px;
 }
 
 nav a {
@@ -36,14 +36,14 @@ nav a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    width: 150px;
+    padding: 5px;
 }
 
 ul {
-    margin-left: 5%;
+    margin-left: 5px;
 }
 
 li {
     list-style: none;
-    margin-top: 5%;
+    padding: 10px;
 }
