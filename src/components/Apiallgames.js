@@ -176,123 +176,126 @@ class ApiAllgames extends Component {
     render() {
         return (
             <div>
+                <div class="filter">
 
-                <div className="allselect">
-                    <div className="select">
-                        <button className="buttonselect" onClick={this.showMenu}>
-                            Platform<img src="./img/arrowdown.png" alt="" />
-                        </button>
-                        {
-                            this.state.isToggleOn
-                                ? (
-                                    <div className="menu">
-                                        {/* <div><input type="checkbox" defaultChecked={this.state.platform[0].isChecked} onChange={(e) => this.handlePlatform(0)} /><span> All Platforms </span></div> <br /> */}
-                                        <div><input type="checkbox" defaultChecked={this.state.platform[1].isChecked} onChange={(e) => this.handlePlatform(1)} /><span> Windows (PC) </span></div><br />
-                                        <div><input type="checkbox" defaultChecked={this.state.platform[2].isChecked} onChange={(e) => this.handlePlatform(2)} /><span> Browser (Web) </span></div>
-                                    </div>
-                                )
-                                : (
-                                    null
-                                )
-                        }
+                    <div className="allselect  grid4">
+                        <div className="select">
+                            <button className="buttonselect" onClick={this.showMenu}>
+                                Platform<img src="./img/arrowdown.png" alt="" />
+                            </button>
+                            {
+                                this.state.isToggleOn
+                                    ? (
+                                        <div className="menu">
+                                            {/* <div><input type="checkbox" defaultChecked={this.state.platform[0].isChecked} onChange={(e) => this.handlePlatform(0)} /><span> All Platforms </span></div> <br /> */}
+                                            <div><input type="checkbox" defaultChecked={this.state.platform[1].isChecked} onChange={(e) => this.handlePlatform(1)} /><span> Windows (PC) </span></div><br />
+                                            <div><input type="checkbox" defaultChecked={this.state.platform[2].isChecked} onChange={(e) => this.handlePlatform(2)} /><span> Browser (Web) </span></div>
+                                        </div>
+                                    )
+                                    : (
+                                        null
+                                    )
+                            }
 
+                        </div>
+                        <div className="select1">
+                            <button className="buttonselect1" onClick={(e) => this.showMenu1(e)}>
+                                Genre/Tag<img src="./img/arrowdown.png" alt="" />
+                            </button>
+
+                            {
+                                this.state.isToggleOn1
+                                    ? (
+                                        <div className="menu1">
+                                            <div><input type="checkbox" defaultChecked={this.state.genre[0].isChecked} onChange={(e) => this.handleGenre(0)} /><span> MMORPG </span></div> <br />
+                                            <div><input type="checkbox" defaultChecked={this.state.genre[1].isChecked} onChange={(e) => this.handleGenre(1)} /><span> Shooter</span></div><br />
+                                            <div><input type="checkbox" defaultChecked={this.state.genre[2].isChecked} onChange={(e) => this.handleGenre(2)} /><span> Strategy </span></div>
+                                            <div className="moba"><input type="checkbox" defaultChecked={this.state.genre[3].isChecked} onChange={(e) => this.handleGenre(3)} /><span> MOBA </span></div>
+                                        </div>
+
+                                    )
+                                    : (
+                                        null
+                                    )
+                            }
+                        </div>
+
+                        <div className="select2">
+                            <button className="buttonselect2" onClick={this.showMenu2}>
+                                Sort by<img src="./img/arrowdown.png" alt="" />
+                            </button>
+
+                            {
+                                this.state.isToggleOn2
+                                    ? (
+                                        <div className="menu2">
+                                            <div><input type="checkbox" defaultChecked={this.state.sort[0].isChecked} onChange={(e) => this.handleSort('relevance', 0)} /><span> Relevance </span></div> <br />
+                                            <div><input type="checkbox" defaultChecked={this.state.sort[1].isChecked} onChange={(e) => this.handleSort('popularity', 1)} /><span> Popularity</span></div><br />
+                                            <div><input type="checkbox" defaultChecked={this.state.sort[2].isChecked} onChange={(e) => this.handleSort('release-date', 2)} /><span> Release Date </span></div>
+                                            <div className="moba"><input type="checkbox" defaultChecked={this.state.sort[3].isChecked} onChange={(e) => this.handleSort('alphabetical', 3)} /><span> Alphabetical </span></div>
+                                        </div>
+                                    )
+                                    : (
+                                        null
+                                    )
+                            }
+                        </div>
                     </div>
-                    <div className="select1">
-                        <button className="buttonselect1" onClick={(e) => this.showMenu1(e)}>
-                            Genre/Tag<img src="./img/arrowdown.png" alt="" />
-                        </button>
-
+                    <div className="flex">
                         {
-                            this.state.isToggleOn1
-                                ? (
-                                    <div className="menu1">
-                                        <div><input type="checkbox" defaultChecked={this.state.genre[0].isChecked} onChange={(e) => this.handleGenre(0)} /><span> MMORPG </span></div> <br />
-                                        <div><input type="checkbox" defaultChecked={this.state.genre[1].isChecked} onChange={(e) => this.handleGenre(1)} /><span> Shooter</span></div><br />
-                                        <div><input type="checkbox" defaultChecked={this.state.genre[2].isChecked} onChange={(e) => this.handleGenre(2)} /><span> Strategy </span></div>
-                                        <div className="moba"><input type="checkbox" defaultChecked={this.state.genre[3].isChecked} onChange={(e) => this.handleGenre(3)} /><span> MOBA </span></div>
-                                    </div>
+                            this.state.platform[1].isChecked ?
+                                <div className="isChecked"><input type="checkbox" defaultChecked={this.state.platform[1].isChecked} onChange={(e) => this.handleAllPlatform(1)} /><span> Windows (PC) </span></div>
+                                : null
+                        }
+                        {
+                            this.state.platform[2].isChecked ?
+                                <div className="isChecked"><input type="checkbox" defaultChecked={this.state.platform[2].isChecked} onChange={(e) => this.handleAllPlatform(2)} /><span> Browser (Web) </span></div>
+                                : null
+                        }
+                        {
+                            this.state.genre[0].isChecked ?
+                                <div className="isChecked"><input type="checkbox" defaultChecked={this.state.genre[0].isChecked} onChange={(e) => this.handleAllGenre(0)} /><span> MMORPG</span></div>
+                                : null
+                        }
+                        {
+                            this.state.genre[1].isChecked ?
+                                <div className="isChecked"><input type="checkbox" defaultChecked={this.state.genre[1].isChecked} onChange={(e) => this.handleAllGenre(1)} /><span> Shooter</span></div>
+                                : null
 
-                                )
-                                : (
-                                    null
-                                )
+                        }
+                        {
+                            this.state.genre[2].isChecked ?
+                                <div className="isChecked"><input type="checkbox" defaultChecked={this.state.genre[2].isChecked} onChange={(e) => this.handleAllGenre(2)} /><span> Strategy </span></div>
+                                : null
+                        }
+                        {
+                            this.state.genre[3].isChecked ?
+                                <div className="isChecked"><input type="checkbox" defaultChecked={this.state.genre[3].isChecked} onChange={(e) => this.handleAllGenre(3)} /><span> MOBA </span></div>
+                                : null
+                        }
+                        {
+                            this.state.sort[0].isChecked ?
+                                <div className="isChecked"><input type="checkbox" defaultChecked={this.state.sort[0].isChecked} onChange={(e) => this.handleAllSort(0)} /><span> Relevance </span></div>
+                                : null
+                        }
+                        {
+                            this.state.sort[1].isChecked ?
+                                <div className="isChecked"><input type="checkbox" defaultChecked={this.state.sort[1].isChecked} onChange={(e) => this.handleAllSort(1)} /><span> Popularity</span></div>
+                                : null
+                        }
+                        {
+                            this.state.sort[2].isChecked ?
+                                <div className="isChecked"><input type="checkbox" defaultChecked={this.state.sort[2].isChecked} onChange={(e) => this.handleAllSort(2)} /><span> Release Date </span></div>
+                                : null
+                        }
+                        {
+                            this.state.sort[3].isChecked ?
+                                <div className="isChecked"><input type="checkbox" defaultChecked={this.state.sort[3].isChecked} onChange={(e) => this.handleAllSort(3)} /><span> Alphabetical </span></div>
+                                : null
                         }
                     </div>
-
-                    <div className="select2">
-                        <button className="buttonselect2" onClick={this.showMenu2}>
-                            Sort by<img src="./img/arrowdown.png" alt="" />
-                        </button>
-
-                        {
-                            this.state.isToggleOn2
-                                ? (
-                                    <div className="menu2">
-                                        <div><input type="checkbox" defaultChecked={this.state.sort[0].isChecked} onChange={(e) => this.handleSort('relevance', 0)} /><span> Relevance </span></div> <br />
-                                        <div><input type="checkbox" defaultChecked={this.state.sort[1].isChecked} onChange={(e) => this.handleSort('popularity', 1)} /><span> Popularity</span></div><br />
-                                        <div><input type="checkbox" defaultChecked={this.state.sort[2].isChecked} onChange={(e) => this.handleSort('release-date', 2)} /><span> Release Date </span></div>
-                                        <div className="moba"><input type="checkbox" defaultChecked={this.state.sort[3].isChecked} onChange={(e) => this.handleSort('alphabetical', 3)} /><span> Alphabetical </span></div>
-                                    </div>
-                                )
-                                : (
-                                    null
-                                )
-                        }
-                    </div>
-                    {
-                        this.state.platform[1].isChecked ?
-                            <div><input type="checkbox" defaultChecked={this.state.platform[1].isChecked} onChange={(e) => this.handleAllPlatform(1)} /><span> Windows (PC) </span></div>
-                            : null
-                    }
-                    {
-                        this.state.platform[2].isChecked ?
-                            <div><input type="checkbox" defaultChecked={this.state.platform[2].isChecked} onChange={(e) => this.handleAllPlatform(2)} /><span> Browser (Web) </span></div>
-                            : null
-                    }
-                    {
-                        this.state.genre[0].isChecked ?
-                            <div><input type="checkbox" defaultChecked={this.state.genre[0].isChecked} onChange={(e) => this.handleAllGenre(0)} /><span> MMORPG</span></div>
-                            : null
-                    }
-                    {
-                        this.state.genre[1].isChecked ?
-                            <div><input type="checkbox" defaultChecked={this.state.genre[1].isChecked} onChange={(e) => this.handleAllGenre(1)} /><span> Shooter</span></div>
-                            : null
-
-                    }
-                    {
-                        this.state.genre[2].isChecked ?
-                            <div><input type="checkbox" defaultChecked={this.state.genre[2].isChecked} onChange={(e) => this.handleAllGenre(2)} /><span> Strategy </span></div>
-                            : null
-                    }
-                    {
-                        this.state.genre[3].isChecked ?
-                            <div className="moba"><input type="checkbox" defaultChecked={this.state.genre[3].isChecked} onChange={(e) => this.handleAllGenre(3)} /><span> MOBA </span></div>
-                            : null
-                    }
-                    {
-                        this.state.sort[0].isChecked ?
-                            <div><input type="checkbox" defaultChecked={this.state.sort[0].isChecked} onChange={(e) => this.handleAllSort(0)} /><span> Relevance </span></div>
-                            : null
-                    }
-                    {
-                        this.state.sort[1].isChecked ?
-                            <div><input type="checkbox" defaultChecked={this.state.sort[1].isChecked} onChange={(e) => this.handleAllSort(1)} /><span> Popularity</span></div>
-                            : null
-                    }
-                    {
-                        this.state.sort[2].isChecked ?
-                            <div><input type="checkbox" defaultChecked={this.state.sort[2].isChecked} onChange={(e) => this.handleAllSort(2)} /><span> Release Date </span></div>
-                            : null
-                    }
-                    {
-                        this.state.sort[3].isChecked ?
-                            <div className="moba"><input type="checkbox" defaultChecked={this.state.sort[3].isChecked} onChange={(e) => this.handleAllSort(3)} /><span> Alphabetical </span></div>
-                            : null
-                    }
-
-
                 </div>
+
                 <div className="apiallgames grid4">
                     {this.state.isLoaded ?
 
