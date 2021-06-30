@@ -123,41 +123,37 @@ class ApiAllgames extends Component {
 
     // Filter für Platform
     handleFilter = () => {
-        let activePlatforms = this.state.platform.map(pl => {
-            if (pl.isChecked) {
-                return pl.feld
-            }
-        })
-        // if (this.state.platform[0].isChecked) {
-        //     activePlatforms = ["PC (Windows)", "Web Browser"]
-        //     console.log("All is found." + activePlatforms)
-        // }
-        let dataShooter = [...this.state.data]
-        let temp2 = dataShooter.filter(elem => {
-            if (activePlatforms.includes(elem.platform)) {
-                console.log("Gefunden Platform")
-                return elem
-            }
+        let activePlatforms = this.state.platform.map(pl => pl.isChecked ? pl.feld : null
+            // if (pl.isChecked) {
+            //     return pl.feld
+            // } 
+        )
 
-        })
+        let dataShooter = [...this.state.data]
+        let temp2 = dataShooter.filter(elem => activePlatforms.includes(elem.platform) ? elem : null
+            // if (activePlatforms.includes(elem.platform)) {
+            //     console.log("Gefunden Platform")
+            //     return elem
+            // }
+
+        )
         console.log(temp2)
         this.setState({ data: temp2 })
     }
     // Filter für Genre
     handleFilterGenre = () => {
-        let activeGenres = this.state.genre.map(pl => {
-            if (pl.isChecked) {
-                return pl.feld
-            }
-        })
+        let activeGenres = this.state.genre.map(pl => pl.isChecked ? pl.feld : null
+            // if (pl.isChecked) {
+            //     return pl.feld
+            // }
+        )
         let dataShooter = [...this.state.data]
-        let temp2 = dataShooter.filter(elem => {
-            if (activeGenres.includes(elem.genre)) {
-                console.log("Gefunden Genre")
-                return elem
-            }
-
-        })
+        let temp2 = dataShooter.filter(elem => activeGenres.includes(elem.genre) ? elem : null
+            // if (activeGenres.includes(elem.genre)) {
+            //     console.log("Gefunden Genre")
+            //     return elem
+            // }
+        )
         console.log(temp2)
         this.setState({ data: temp2 })
     }
@@ -190,7 +186,7 @@ class ApiAllgames extends Component {
                             this.state.isToggleOn
                                 ? (
                                     <div className="menu">
-                                        <div><input type="checkbox" defaultChecked={this.state.platform[0].isChecked} onChange={(e) => this.handlePlatform(0)} /><span> All Platforms </span></div> <br />
+                                        {/* <div><input type="checkbox" defaultChecked={this.state.platform[0].isChecked} onChange={(e) => this.handlePlatform(0)} /><span> All Platforms </span></div> <br /> */}
                                         <div><input type="checkbox" defaultChecked={this.state.platform[1].isChecked} onChange={(e) => this.handlePlatform(1)} /><span> Windows (PC) </span></div><br />
                                         <div><input type="checkbox" defaultChecked={this.state.platform[2].isChecked} onChange={(e) => this.handlePlatform(2)} /><span> Browser (Web) </span></div>
                                     </div>
