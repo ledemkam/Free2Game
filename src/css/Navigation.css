@@ -66,4 +66,14 @@ li {
     top: 10px;
     margin-top: 25px;
     width: 2.5rem;
-  }
+}
+
+.open .burgerMenu {
+    margin-bottom: 29px;
+}
+
+@media(max-width: 426px){
+    .open {
+        width: 100%;
+ }
+}

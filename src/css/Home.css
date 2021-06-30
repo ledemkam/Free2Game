@@ -53,5 +53,12 @@ main h2 {
    .grid4{
       margin-left: 11%;
    }
-   
+
+   figure {
+      margin-bottom: 10%;
+   }
+
+   .grid2 {
+      margin-left: 10%;
+   }
 }
