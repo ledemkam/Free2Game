@@ -158,4 +158,61 @@ th{
     margin-left: 3%;
 }
 
-
+@media(max-width: 426px){
+    .logo {
+        width: 70%;
+        margin-left: 8%;
+            }
+    .header form{
+        width: 38%;
+        margin-right: 3%;
+        height: 50%;
+    }
+    .searchfield{
+        height: 33px;
+    }
+    .detailimg img{
+        margin-left: 48px;
+    }
+    .searchfield button img{
+        margin-left: 37%;
+    }
+    .detailtitle{
+        margin-left: 15%;
+    }
+    .imgabout img{
+        display: none;
+    }
+    .imgoneandtwo{
+        display: none;
+    }
+    .lastpart{
+        margin-top: 120%;
+        display: block;
+        width: 100%;
+    }
+    .additional{
+        margin-left: 16%;
+    }
+    .system{
+        margin-left: 15%;
+        margin-top: 15%;
+    }
+    .detailsabout{
+        margin-top: 80%;
+    }
+    .genre{
+        margin-left: 186px;
+    }
+    .detailsgame button{
+        margin-left: 38%;
+        margin-top: 5%;
+    }
+    .detailsabout{
+        right: 5%;
+        width: 80%;
+    }
+    .info3 p{
+        margin-left: 8%;
+    }
+}
