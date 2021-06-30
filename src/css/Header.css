@@ -6,7 +6,7 @@
    margin-top: 10px;
    display: flex;
    justify-content: space-between;
-   padding: 0 2% 0 10%;
+   padding: 0 2% 0 5%;
 }
 
 form {
@@ -30,4 +30,10 @@ form button {
    border-style: none;
    top: 10%;
    right: 10%;
+}
+
+@media(max-width: 426px){
+   form button{
+      right: 35%;
+   }
 }

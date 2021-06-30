@@ -1,0 +1,34 @@
+@media(max-width: 426px){
+    .logo {
+        width: 70%;
+        margin-left: 33%;
+            }
+    .header form{
+        width: 38%;
+        margin-right: 3%;
+        height: 50%;
+    }
+    .searchfield{
+        height: 33px;
+        width: 128px;
+    }
+    .detailimg img{
+        margin-left: 48px;
+        height: 100%;
+    }
+    .searchfield button img{
+        margin-left: 60%;
+    }
+    .addPageHero h1{
+        left: 19%;
+        bottom: 71%;
+        font-size: 2em;
+    }
+
+    #AddedPage .card{
+        margin-bottom: 5%;
+        margin-left: 7%;
+    }
+   
+    
+}

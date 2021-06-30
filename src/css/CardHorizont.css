@@ -43,3 +43,14 @@
     margin-top: 3rem;
     font-family: Oswald;
 }
+
+@media(max-width: 426px){
+    .cardHorizont {
+        display: block !important;
+    }
+    .cardHorizont > div{
+        width: 100% !important;
+        padding-bottom: 27%;
+    }
+ }
+ 

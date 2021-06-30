@@ -19,3 +19,94 @@ p{
 .apiallgames{
     float: left;
 }
+
+@media(max-width: 426px){
+    .logo {
+        width: 70%;
+        margin-left: 33%;
+            }
+    .header form{
+        width: 38%;
+        margin-right: 3%;
+        height: 50%;
+    }
+    .searchfield{
+        height: 33px;
+        width: 128px;
+    }
+    .detailimg img{
+        margin-left: 48px;
+        height: 100%;
+    }
+    .searchfield button img{
+        margin-left: 60%;
+    }
+    .allgamestitel{
+        margin-left: 20%;
+        margin-top: -14%;
+        font-size: 2em;
+    }
+    .allselect .select .buttonselect{
+        margin-left: 0;
+        width: 90px;
+        height: 33px;
+        text-align: center;
+        font-size: 13px;
+    }
+    .allselect .select1 .buttonselect1{
+        margin-left: 0;
+        width: 90px;
+        height: 33px;
+        text-align: center;
+        font-size: 13px;
+    }
+    .allselect .select2 .buttonselect2{
+        margin-left: 0;
+        width: 90px;
+        height: 33px;
+        text-align: center;
+        font-size: 13px;
+    }
+    .detailsgame .allselect{
+        display: flex;
+        margin-left: 43px;
+    }
+    .allselect button img{
+        margin-left: 13%;
+        width: 8px;
+    }
+    .apiallgames{
+        margin-left: 17%;
+        margin-top: 10%;
+    }
+    .apiallgames .card{
+        margin-bottom: 5%;
+    }
+    .allselect .menu{
+        width: 125px;
+        height: 95px;
+        margin-left: -21px;
+        padding: 6px;
+    }
+    .allselect .menu1{
+        width: 115px;
+        height: 174px;
+        margin-left: -12px;
+        padding: 6px;
+    }
+    .allselect .menu2{
+        width: 120px;
+        height: 174px;
+        margin-left: -14px;
+        padding: 6px;
+    }
+    .allselect .menu input{
+        margin-left: 0;
+    }
+    .allselect .menu1 input{
+        margin-left: 0;
+    }
+    .allselect .menu2 input{
+        margin-left: 0;
+    }
+}
