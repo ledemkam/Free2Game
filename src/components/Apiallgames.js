@@ -15,9 +15,10 @@ class ApiAllgames extends Component {
             isToggleOn2: false,
             data: [],
             dataOriginal: [],
-            isChechedShooter: false,
+            isLoaded: false,
             platform: [{ feld: "All", isChecked: false }, { feld: "PC (Windows)", isChecked: false }, { feld: "Web Browser", isChecked: false }],
-            genre: [{ feld: "MMORPG", isChecked: false }, { feld: "Shooter", isChecked: false }, { feld: "Strategy", isChecked: false }, { feld: "MOBA", isChecked: false }]
+            genre: [{ feld: "MMORPG", isChecked: false }, { feld: "Shooter", isChecked: false }, { feld: "Strategy", isChecked: false }, { feld: "MOBA", isChecked: false }],
+            sort: [{ feld: "relevance", isChecked: false }, { feld: "popularity", isChecked: false }, { feld: "release-date", isChecked: false }, { feld: "alphabetical", isChecked: false }]
         }
 
         this.showMenu = this.showMenu.bind(this);
@@ -31,7 +32,15 @@ class ApiAllgames extends Component {
         fetch('https://www.freetogame.com/api/games')
             .then(response => response.json())
             .then(json => {
-                this.setState({ data: json, dataOriginal: json });
+                this.setState({ data: json, dataOriginal: json, isLoaded: true });
+            })
+    }
+
+    loadApi = (sorting) => {
+        fetch(`https://www.freetogame.com/api/games?sort-by=${sorting}`)
+            .then(response => response.json())
+            .then(json => {
+                this.setState({ data: json, dataOriginal: json, isLoaded: true });
             })
     }
 
@@ -72,6 +81,16 @@ class ApiAllgames extends Component {
         this.setState({ data: this.state.dataOriginal })
         console.log(this.state.platform)
     }
+    // Sort wurde zurückgesetzt
+    handleAllSort = (item) => {
+        let sortUpdate = this.state.sort
+        sortUpdate[item].isChecked = !this.state.sort[item].isChecked
+        console.log(sortUpdate)
+        this.setState({ sort: sortUpdate })
+        this.setState({ data: this.state.dataOriginal })
+        console.log(this.state.sort)
+        this.loadApi('relevance')
+    }
 
     // Platform wurde gewählt
     handlePlatform = (item) => {
@@ -101,6 +120,7 @@ class ApiAllgames extends Component {
         console.log(this.state.genre)
         this.handleFilterGenre()
     }
+
     // Filter für Platform
     handleFilter = () => {
         let activePlatforms = this.state.platform.map(pl => {
@@ -108,6 +128,10 @@ class ApiAllgames extends Component {
                 return pl.feld
             }
         })
+        // if (this.state.platform[0].isChecked) {
+        //     activePlatforms = ["PC (Windows)", "Web Browser"]
+        //     console.log("All is found." + activePlatforms)
+        // }
         let dataShooter = [...this.state.data]
         let temp2 = dataShooter.filter(elem => {
             if (activePlatforms.includes(elem.platform)) {
@@ -138,9 +162,25 @@ class ApiAllgames extends Component {
         this.setState({ data: temp2 })
     }
 
+    //Filter für Sort 
+    handleSort = (sort, item) => {
+        this.loadApi(sort)
+        console.log(this.state.data)
+        this.setState(prevState => ({
+            isToggleOn2: !prevState.isToggleOn2
+        }))
+
+
+        let sortUpdate = this.state.sort
+        sortUpdate[item].isChecked = !this.state.sort.isChecked
+        console.log(this.state.sort)
+
+    }
+
     render() {
         return (
             <div>
+
                 <div className="allselect">
                     <div className="select">
                         <button className="buttonselect" onClick={this.showMenu}>
@@ -150,7 +190,7 @@ class ApiAllgames extends Component {
                             this.state.isToggleOn
                                 ? (
                                     <div className="menu">
-                                        <div><input type="checkbox" /><span> All Platforms </span></div> <br />
+                                        <div><input type="checkbox" defaultChecked={this.state.platform[0].isChecked} onChange={(e) => this.handlePlatform(0)} /><span> All Platforms </span></div> <br />
                                         <div><input type="checkbox" defaultChecked={this.state.platform[1].isChecked} onChange={(e) => this.handlePlatform(1)} /><span> Windows (PC) </span></div><br />
                                         <div><input type="checkbox" defaultChecked={this.state.platform[2].isChecked} onChange={(e) => this.handlePlatform(2)} /><span> Browser (Web) </span></div>
                                     </div>
@@ -192,10 +232,10 @@ class ApiAllgames extends Component {
                             this.state.isToggleOn2
                                 ? (
                                     <div className="menu2">
-                                        <div><input type="checkbox" /><span> Relevance </span></div> <br />
-                                        <div><input type="checkbox" /><span> Popularity</span></div><br />
-                                        <div><input type="checkbox" /><span> Release Date </span></div>
-                                        <div className="moba"><input type="checkbox" /><span> MOBA </span></div>
+                                        <div><input type="checkbox" defaultChecked={this.state.sort[0].isChecked} onChange={(e) => this.handleSort('relevance', 0)} /><span> Relevance </span></div> <br />
+                                        <div><input type="checkbox" defaultChecked={this.state.sort[1].isChecked} onChange={(e) => this.handleSort('popularity', 1)} /><span> Popularity</span></div><br />
+                                        <div><input type="checkbox" defaultChecked={this.state.sort[2].isChecked} onChange={(e) => this.handleSort('release-date', 2)} /><span> Release Date </span></div>
+                                        <div className="moba"><input type="checkbox" defaultChecked={this.state.sort[3].isChecked} onChange={(e) => this.handleSort('alphabetical', 3)} /><span> Alphabetical </span></div>
                                     </div>
                                 )
                                 : (
@@ -234,13 +274,37 @@ class ApiAllgames extends Component {
                             <div className="moba"><input type="checkbox" defaultChecked={this.state.genre[3].isChecked} onChange={(e) => this.handleAllGenre(3)} /><span> MOBA </span></div>
                             : null
                     }
+                    {
+                        this.state.sort[0].isChecked ?
+                            <div><input type="checkbox" defaultChecked={this.state.sort[0].isChecked} onChange={(e) => this.handleAllSort(0)} /><span> Relevance </span></div>
+                            : null
+                    }
+                    {
+                        this.state.sort[1].isChecked ?
+                            <div><input type="checkbox" defaultChecked={this.state.sort[1].isChecked} onChange={(e) => this.handleAllSort(1)} /><span> Popularity</span></div>
+                            : null
+                    }
+                    {
+                        this.state.sort[2].isChecked ?
+                            <div><input type="checkbox" defaultChecked={this.state.sort[2].isChecked} onChange={(e) => this.handleAllSort(2)} /><span> Release Date </span></div>
+                            : null
+                    }
+                    {
+                        this.state.sort[3].isChecked ?
+                            <div className="moba"><input type="checkbox" defaultChecked={this.state.sort[3].isChecked} onChange={(e) => this.handleAllSort(3)} /><span> Alphabetical </span></div>
+                            : null
+                    }
 
 
                 </div>
                 <div className="apiallgames grid4">
-                    {this.state.data.map((ele, i) => <Card key={i} data={ele} />)
+                    {this.state.isLoaded ?
+
+                        this.state.data.map((ele, i) => <Card key={i} data={ele} />)
+                        : "Loading ..."
                     }
                 </div>
+
             </div>
 
         );
