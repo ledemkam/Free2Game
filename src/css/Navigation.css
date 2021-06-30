@@ -15,7 +15,7 @@ nav {
 
 .burgerMenu {
     flex-grow: .5;
-    margin: 7px 7px 0 7px;
+    margin: 10px 10px 0 10px;
     align-items: flex-end;
 }
 
@@ -44,6 +44,5 @@ ul {
 
 li {
     list-style: none;
-    margin-top: 5px;
-    padding-right: 5px;
+    padding: 10px;
 }
