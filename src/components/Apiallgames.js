@@ -181,7 +181,11 @@ class ApiAllgames extends Component {
                     <div className="allselect  grid4">
                         <div className="select">
                             <button className="buttonselect" onClick={this.showMenu}>
-                                Platform<img src="./img/arrowdown.png" alt="" />
+                                Platform
+                                {
+                                    this.state.isToggleOn ?
+                                        <img src="./img/arrowdown.png" alt="" /> : <img src="./img/dropdown.png" alt="" />
+                                }
                             </button>
                             {
                                 this.state.isToggleOn
@@ -199,8 +203,11 @@ class ApiAllgames extends Component {
 
                         </div>
                         <div className="select1">
-                            <button className="buttonselect1" onClick={(e) => this.showMenu1(e)}>
-                                Genre/Tag<img src="./img/arrowdown.png" alt="" />
+                            <button className="buttonselect1" onClick={(e) => this.showMenu1(e)}>Genre/Tag
+                                {
+                                    this.state.isToggleOn1 ?
+                                        <img src="./img/arrowdown.png" alt="" /> : <img src="./img/dropdown.png" alt="" />
+                                }
                             </button>
 
                             {
@@ -222,7 +229,11 @@ class ApiAllgames extends Component {
 
                         <div className="select2">
                             <button className="buttonselect2" onClick={this.showMenu2}>
-                                Sort by<img src="./img/arrowdown.png" alt="" />
+                                Sort by
+                                {
+                                    this.state.isToggleOn2 ?
+                                        <img src="./img/arrowdown.png" alt="" /> : <img src="./img/dropdown.png" alt="" />
+                                }
                             </button>
 
                             {

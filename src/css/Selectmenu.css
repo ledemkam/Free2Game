@@ -156,3 +156,11 @@ padding-top: 0;
     padding-bottom: 2%;
 }
 
+/* 
+input[type=checkbox]:checked:before{
+    content: "X";
+    background-color: #FFF;
+    border: 2px solid #FFFFFF;
+  } */
+
+
