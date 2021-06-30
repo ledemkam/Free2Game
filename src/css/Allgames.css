@@ -19,3 +19,88 @@ p{
 .apiallgames{
     float: left;
 }
+
+@media(max-width: 426px){
+    .logo {
+        width: 70%;
+        margin-left: 8%;
+            }
+    .header form{
+        width: 38%;
+        margin-right: 3%;
+        height: 50%;
+    }
+    .searchfield{
+        height: 33px;
+    }
+    .detailimg img{
+        margin-left: 48px;
+    }
+    .searchfield button img{
+        margin-left: 31%;
+    }
+    .allgamestitel{
+        margin-left: 31%;
+        margin-top: -25%;
+    }
+    .allselect .select .buttonselect{
+        margin-left: 0;
+        width: 90px;
+        height: 33px;
+        text-align: center;
+        font-size: 13px;
+    }
+    .allselect .select1 .buttonselect1{
+        margin-left: 0;
+        width: 90px;
+        height: 33px;
+        text-align: center;
+        font-size: 13px;
+    }
+    .allselect .select2 .buttonselect2{
+        margin-left: 0;
+        width: 90px;
+        height: 33px;
+        text-align: center;
+        font-size: 13px;
+    }
+    .detailsgame .allselect{
+        display: flex;
+        margin-left: 18px;
+    }
+    .allselect button img{
+        margin-left: 13%;
+        width: 8px;
+    }
+    .apiallgames{
+        margin-left: 11%;
+        margin-top: 10%;
+    }
+    .allselect .menu{
+        width: 125px;
+        height: 116px;
+        margin-left: 0;
+        padding: 6px;
+    }
+    .allselect .menu1{
+        width: 115px;
+        height: 182px;
+        margin-left: 0;
+        padding: 6px;
+    }
+    .allselect .menu2{
+        width: 120px;
+        height: 186px;
+        margin-left: 0;
+        padding: 6px;
+    }
+    .allselect .menu input{
+        margin-left: 0;
+    }
+    .allselect .menu1 input{
+        margin-left: 0;
+    }
+    .allselect .menu2 input{
+        margin-left: 0;
+    }
+}

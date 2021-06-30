@@ -37,3 +37,21 @@ main h2 {
 #topGamesWeb p {
    display: none;
 }
+
+@media(max-width: 426px){
+   .homeHero h1{
+      left: 18%;
+      bottom: 67%;
+      font-size: 21px;
+      width: 50%;
+   }
+   .grid4 h2{
+      margin-left: 31%;
+      margin-bottom: 4%;
+      font-size: 1em;
+   }
+   .grid4{
+      margin-left: 11%;
+   }
+   
+}
