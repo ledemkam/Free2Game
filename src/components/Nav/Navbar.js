@@ -5,7 +5,7 @@ import { TiPlusOutline } from 'react-icons/ti';
 import { useState } from 'react'
 
 import {
-   Link
+   NavLink,
 } from 'react-router-dom';
 
 const Navbar = () => {
@@ -19,22 +19,22 @@ const Navbar = () => {
          </div>
          <ul>
             <li>
-               <Link to="/">
+               <NavLink to="/Home" activeStyle={{ backgroundColor: "#FF4654", borderRadius: "10px" }}>
                   <VscHome fontSize="30px" />
                   <span style={{ display: isOpen ? "inline-block" : "none" }}>Home</span>
-               </Link>
+               </NavLink>
             </li>
             <li>
-               <Link to="/Allgames">
+               <NavLink to="/Allgames" activeStyle={{ backgroundColor: "#FF4654", borderRadius: "10px" }}>
                   <GiRetroController fontSize="30px" />
                   <span style={{ display: isOpen ? "inline-block" : "none" }}>All Game</span>
-               </Link>
+               </NavLink>
             </li>
             <li>
-               <Link to="/AddedPage">
+               <NavLink to="/AddedPage" activeStyle={{ backgroundColor: "#FF4654", borderRadius: "10px" }}>
                   <TiPlusOutline fontSize="30px" />
                   <span style={{ display: isOpen ? "inline-block" : "none" }}>Recently Added</span>
-               </Link>
+               </NavLink>
             </li>
          </ul>
       </nav>
