@@ -31,3 +31,9 @@ form button {
    top: 10%;
    right: 10%;
 }
+
+@media(max-width: 426px){
+   form button{
+      right: 35%;
+   }
+}

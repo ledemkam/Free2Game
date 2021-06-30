@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from './Card'
+import '../css/AddedPage.css'
 
 class AddedPage extends Component {
     state = {

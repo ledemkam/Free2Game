@@ -23,7 +23,7 @@ p{
 @media(max-width: 426px){
     .logo {
         width: 70%;
-        margin-left: 8%;
+        margin-left: 33%;
             }
     .header form{
         width: 38%;
@@ -32,16 +32,19 @@ p{
     }
     .searchfield{
         height: 33px;
+        width: 128px;
     }
     .detailimg img{
         margin-left: 48px;
+        height: 100%;
     }
     .searchfield button img{
-        margin-left: 31%;
+        margin-left: 60%;
     }
     .allgamestitel{
-        margin-left: 31%;
-        margin-top: -25%;
+        margin-left: 20%;
+        margin-top: -14%;
+        font-size: 2em;
     }
     .allselect .select .buttonselect{
         margin-left: 0;
@@ -66,32 +69,35 @@ p{
     }
     .detailsgame .allselect{
         display: flex;
-        margin-left: 18px;
+        margin-left: 43px;
     }
     .allselect button img{
         margin-left: 13%;
         width: 8px;
     }
     .apiallgames{
-        margin-left: 11%;
+        margin-left: 17%;
         margin-top: 10%;
+    }
+    .apiallgames .card{
+        margin-bottom: 5%;
     }
     .allselect .menu{
         width: 125px;
-        height: 116px;
-        margin-left: 0;
+        height: 95px;
+        margin-left: -21px;
         padding: 6px;
     }
     .allselect .menu1{
         width: 115px;
-        height: 182px;
-        margin-left: 0;
+        height: 174px;
+        margin-left: -12px;
         padding: 6px;
     }
     .allselect .menu2{
         width: 120px;
-        height: 186px;
-        margin-left: 0;
+        height: 174px;
+        margin-left: -14px;
         padding: 6px;
     }
     .allselect .menu input{

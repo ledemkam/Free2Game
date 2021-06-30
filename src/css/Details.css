@@ -175,10 +175,10 @@ th{
         margin-left: 48px;
     }
     .searchfield button img{
-        margin-left: 37%;
+        margin-left: 60%;
     }
     .detailtitle{
-        margin-left: 15%;
+        margin-left: 18%;
     }
     .imgabout img{
         display: none;
@@ -200,6 +200,8 @@ th{
     }
     .detailsabout{
         margin-top: 80%;
+        right: 4%;
+        width: 75%;
     }
     .genre{
         margin-left: 186px;
@@ -207,10 +209,6 @@ th{
     .detailsgame button{
         margin-left: 38%;
         margin-top: 5%;
-    }
-    .detailsabout{
-        right: 5%;
-        width: 80%;
     }
     .info3 p{
         margin-left: 8%;
