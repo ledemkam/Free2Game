@@ -33,15 +33,11 @@
     font-size: 1.125rem;
 }
 
-.allselect{
+/* .allselect{
     margin-left: 140px;
     margin-top: 8%;
-}
-
-/* .allselect{
-    display: grid;
-    grid-template-rows: repeat(1fr,3);
 } */
+
 
 .menu {
     width: 280px;
@@ -126,4 +122,37 @@ button img{
 }
 
 
+.isChecked {
+    border-radius: 12px;
+    border: 1px solid #FF4654;
+    margin-left: 2%;
+    background: #040F14;
+    padding: 6px 12px;
+}
+
+.isChecked:nth-of-type(1){
+    margin-left: 12%;
+}
+
+.apiallgames p{
+    display: none;
+}
+
+.readMore .button{
+    margin: 0;
+}
+
+.detailsgame .flex{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2%;
+}
+
+.apiallgames{
+padding-top: 0;
+}
+
+.filter .allselect{
+    padding-bottom: 2%;
+}
 
