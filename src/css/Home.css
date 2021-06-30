@@ -37,10 +37,3 @@ main h2 {
 #topGamesWeb p {
    display: none;
 }
-
-/* @media (max-width: 426px) {
-   .grid4,
-   .grid2 {
-      display: none;
-   }
-} */
