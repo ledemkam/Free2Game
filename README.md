@@ -1,3 +1,13 @@
+## Abschlussprojekt Frontend , Weiterbildung bei Supercode Düsseldorf
+#Gruppenarbeit mit insgesamt 4 Personen
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
